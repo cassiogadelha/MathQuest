@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bh3d5ywg3437q"
+path="res://.godot/imported/saw.obj-ff8420078d1babe51f528835476b7e7f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/saw.obj-ff8420078d1babe51f528835476b7e7f.mesh"]
+
+source_file="res://Assets/Platforms/Models/OBJ format/saw.obj"
+dest_files=["res://.godot/imported/saw.obj-ff8420078d1babe51f528835476b7e7f.mesh", "res://.godot/imported/saw.obj-ff8420078d1babe51f528835476b7e7f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

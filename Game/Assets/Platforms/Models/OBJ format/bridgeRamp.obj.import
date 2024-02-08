@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b6xbfu5stiivj"
+path="res://.godot/imported/bridgeRamp.obj-d5b5657e92e2c7d6a586a9733dff0d76.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bridgeRamp.obj-d5b5657e92e2c7d6a586a9733dff0d76.mesh"]
+
+source_file="res://Assets/Platforms/Models/OBJ format/bridgeRamp.obj"
+dest_files=["res://.godot/imported/bridgeRamp.obj-d5b5657e92e2c7d6a586a9733dff0d76.mesh", "res://.godot/imported/bridgeRamp.obj-d5b5657e92e2c7d6a586a9733dff0d76.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

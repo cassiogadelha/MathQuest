@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs6hpa6iousd1"]
+
+[ext_resource type="Texture2D" uid="uid://b56017sexyt22" path="res://icon.svg" id="1_25suy"]
+
+[node name="SpawnPoint" type="Marker3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0233155, 0.999728, 0, -0.999728, -0.0233155, 0, 0.44808, 0)
+texture = ExtResource("1_25suy")

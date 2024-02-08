@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsh7c5cxdxhq2"
+path="res://.godot/imported/blockCliffCorner.obj-d720ef9ea783985b0046b79d919e91cb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/blockCliffCorner.obj-d720ef9ea783985b0046b79d919e91cb.mesh"]
+
+source_file="res://Assets/Platforms/Models/OBJ format/blockCliffCorner.obj"
+dest_files=["res://.godot/imported/blockCliffCorner.obj-d720ef9ea783985b0046b79d919e91cb.mesh", "res://.godot/imported/blockCliffCorner.obj-d720ef9ea783985b0046b79d919e91cb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

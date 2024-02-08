@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="AttackStates" load_steps=2 format=3 uid="uid://dlnpm3rltk6gn"]
+
+[ext_resource type="Script" path="res://Resources/attack_stats.gd" id="1_pfih3"]
+
+[resource]
+script = ExtResource("1_pfih3")
+damage = 20.0
+knockback_force = 5.0
+attacker_position = Vector3(0, 0, 0)

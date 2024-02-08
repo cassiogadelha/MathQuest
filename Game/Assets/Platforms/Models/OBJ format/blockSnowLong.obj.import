@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://gsqrghpeae8b"
+path="res://.godot/imported/blockSnowLong.obj-b4fa2ab168892d1fab31b9150b0de14c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/blockSnowLong.obj-b4fa2ab168892d1fab31b9150b0de14c.mesh"]
+
+source_file="res://Assets/Platforms/Models/OBJ format/blockSnowLong.obj"
+dest_files=["res://.godot/imported/blockSnowLong.obj-b4fa2ab168892d1fab31b9150b0de14c.mesh", "res://.godot/imported/blockSnowLong.obj-b4fa2ab168892d1fab31b9150b0de14c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

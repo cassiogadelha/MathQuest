@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://beery5tavtt6p"
+path="res://.godot/imported/jewel.obj-f367282d0ed267ba50a341faf3a1a6c1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/jewel.obj-f367282d0ed267ba50a341faf3a1a6c1.mesh"]
+
+source_file="res://Assets/Platforms/Models/OBJ format/jewel.obj"
+dest_files=["res://.godot/imported/jewel.obj-f367282d0ed267ba50a341faf3a1a6c1.mesh", "res://.godot/imported/jewel.obj-f367282d0ed267ba50a341faf3a1a6c1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

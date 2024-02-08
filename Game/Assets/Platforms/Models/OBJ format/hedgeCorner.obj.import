@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://drfn0thyn1igf"
+path="res://.godot/imported/hedgeCorner.obj-6b98fee07e11904f3511853a6cfbbb1a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hedgeCorner.obj-6b98fee07e11904f3511853a6cfbbb1a.mesh"]
+
+source_file="res://Assets/Platforms/Models/OBJ format/hedgeCorner.obj"
+dest_files=["res://.godot/imported/hedgeCorner.obj-6b98fee07e11904f3511853a6cfbbb1a.mesh", "res://.godot/imported/hedgeCorner.obj-6b98fee07e11904f3511853a6cfbbb1a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

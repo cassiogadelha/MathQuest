@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="EntityStats" load_steps=2 format=3 uid="uid://bgn8oy75snbuo"]
+
+[ext_resource type="Script" path="res://Resources/entity_stats.gd" id="1_03ou0"]
+
+[resource]
+script = ExtResource("1_03ou0")
+health = 100.0

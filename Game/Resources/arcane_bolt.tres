@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="MagicStats" load_steps=3 format=3 uid="uid://dqodlhbvstiwu"]
+
+[ext_resource type="Resource" uid="uid://dlnpm3rltk6gn" path="res://Resources/arcane_bolt_attack_stats.tres" id="1_p3wjk"]
+[ext_resource type="Script" path="res://Resources/magic_stats.gd" id="1_u2dly"]
+
+[resource]
+script = ExtResource("1_u2dly")
+attack_stats = ExtResource("1_p3wjk")

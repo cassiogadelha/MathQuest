@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5r48h2n8qf7o"
+path="res://.godot/imported/treePineSnow.obj-64149e334180145811594de88bee285f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/treePineSnow.obj-64149e334180145811594de88bee285f.mesh"]
+
+source_file="res://Assets/Platforms/Models/OBJ format/treePineSnow.obj"
+dest_files=["res://.godot/imported/treePineSnow.obj-64149e334180145811594de88bee285f.mesh", "res://.godot/imported/treePineSnow.obj-64149e334180145811594de88bee285f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

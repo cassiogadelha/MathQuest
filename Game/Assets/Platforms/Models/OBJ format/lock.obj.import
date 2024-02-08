@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dh7l84vr7vpo4"
+path="res://.godot/imported/lock.obj-3d2e10bb54d07035a358bc1d11ff1879.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lock.obj-3d2e10bb54d07035a358bc1d11ff1879.mesh"]
+
+source_file="res://Assets/Platforms/Models/OBJ format/lock.obj"
+dest_files=["res://.godot/imported/lock.obj-3d2e10bb54d07035a358bc1d11ff1879.mesh", "res://.godot/imported/lock.obj-3d2e10bb54d07035a358bc1d11ff1879.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dkywsqrs6w2kx"]
+
+[node name="CameraMount" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.18366, 0)
+visible = false
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.904492, 0.42649, 0, -0.42649, 0.904492, 0.52937, 6.30883, 5.8428)
+visible = false
