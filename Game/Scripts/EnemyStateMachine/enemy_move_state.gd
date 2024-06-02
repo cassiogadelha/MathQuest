@@ -3,8 +3,6 @@ class_name EnemyMoveState
 
 var has_moved_away_initial_position := false
 var direction: Vector3
-
-const RANDOM_RADIUS = 3
 	
 func Enter():
 	super.Enter()
@@ -33,8 +31,9 @@ func get_random_position() -> Vector3:
 	var phi = PI * randf()
 	
 	var x = sin(phi) * cos(theta) * 7
-	var y = 0
+	var y = my_self.position.y
 	var z = cos(phi) * 7
+	print(x, "   ", y, "    ", z)
 	
 	return Vector3(x, y, z)
 	

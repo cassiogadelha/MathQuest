@@ -8,8 +8,6 @@ class_name Player
 @onready var foot_steps = $FootSteps
 
 @onready var camera_mount = $"../PhantomCamera3D"
-
-
 @onready var arcane_bolt_spawn_point = $Visuals/ArcaneBoltSpawnPoint
 @onready var movement = $Movement
 
@@ -26,9 +24,10 @@ func _ready():
 	
 func _input(event):
 	if event is InputEventMouseMotion:
-		rotate_y(deg_to_rad(-event.relative.x * sens_horizontal))
-		visuals.rotate_y(deg_to_rad(event.relative.x * sens_horizontal))
-		#camera_mount.rotate_x(deg_to_rad(-event.relative.y * sens_horizontal))
+		#rotate_y(deg_to_rad(-event.relative.x * sens_horizontal))
+		#visuals.rotate_y(deg_to_rad(event.relative.x * sens_horizontal))
+		
+		camera_mount.rotate_y(deg_to_rad(-event.relative.x * sens_horizontal))
 		
 		if(camera_mount.rotation.x >= 0.82):
 			camera_mount.rotation.x = 0.82
