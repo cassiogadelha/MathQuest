@@ -1,0 +1,18 @@
+[gd_resource type="Terrain3DTextureList" load_steps=7 format=3 uid="uid://ej8gy1f5xm3h"]
+
+[ext_resource type="Texture2D" uid="uid://veknlufl0c4v" path="res://Assets/Materials/Ground062S_1K-JPG/Ground062S_1K-JPG_Color.jpg" id="1_deri4"]
+[ext_resource type="Texture2D" uid="uid://sk1e8pg457sc" path="res://Assets/Materials/Ground062S_1K-JPG/Ground062S_1K-JPG_NormalGL.jpg" id="2_ukgyb"]
+[ext_resource type="Texture2D" uid="uid://dvef5jc1rhdo8" path="res://Assets/Materials/Grass001_1K-JPG/Grass001_1K-JPG_Color.jpg" id="3_u6h62"]
+[ext_resource type="Texture2D" uid="uid://c4o5st3o3jvy3" path="res://Assets/Materials/Grass001_1K-JPG/Grass001_1K-JPG_NormalGL.jpg" id="4_jk1hk"]
+
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_wca8j"]
+albedo_texture = ExtResource("1_deri4")
+normal_texture = ExtResource("2_ukgyb")
+
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_hiddn"]
+texture_id = 1
+albedo_texture = ExtResource("3_u6h62")
+normal_texture = ExtResource("4_jk1hk")
+
+[resource]
+textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_wca8j"), SubResource("Terrain3DTexture_hiddn")])

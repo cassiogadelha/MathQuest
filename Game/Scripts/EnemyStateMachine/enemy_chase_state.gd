@@ -21,6 +21,10 @@ func Update(_delta):
 	
 	if can_attack_area.overlaps_body(player):
 		state_transition.emit(self, "EnemyAttackState")
+		
+	if !navigation_agent.is_target_reachable():
+		returned_from_chase_state = true
+		state_transition.emit(self, "EnemyReturnState")
 
 func _on_chase_state_timer_timeout():
 	returned_from_chase_state = true

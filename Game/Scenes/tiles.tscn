@@ -1,351 +1,186 @@
-[gd_scene load_steps=116 format=3 uid="uid://b5mqqetua6yh2"]
+[gd_scene load_steps=29 format=3 uid="uid://b5mqqetua6yh2"]
 
-[ext_resource type="PackedScene" uid="uid://d18t6divjra8y" path="res://Assets/Platforms/Models/GLTF format/arrow.glb" id="1_dxyjx"]
-[ext_resource type="PackedScene" uid="uid://cd2ch4y8baog1" path="res://Assets/Platforms/Models/GLTF format/arrows.glb" id="2_0rntk"]
-[ext_resource type="PackedScene" uid="uid://7lej8oms52js" path="res://Assets/Platforms/Models/GLTF format/barrel.glb" id="3_sac7x"]
-[ext_resource type="PackedScene" uid="uid://ddg8vdo6206oe" path="res://Assets/Platforms/Models/GLTF format/block.glb" id="4_qwp4w"]
-[ext_resource type="PackedScene" uid="uid://bdt16n8ksfhib" path="res://Assets/Platforms/Models/GLTF format/blockCliff.glb" id="5_3wlo4"]
-[ext_resource type="PackedScene" uid="uid://bdwd528axfil5" path="res://Assets/Platforms/Models/GLTF format/blockCliffCorner.glb" id="6_ltwgm"]
-[ext_resource type="PackedScene" uid="uid://dpje8oyq4gkyp" path="res://Assets/Platforms/Models/GLTF format/blockCornerLarge.glb" id="7_vet8u"]
-[ext_resource type="PackedScene" uid="uid://dbgjiasyiaoo3" path="res://Assets/Platforms/Models/GLTF format/blockCornerSmall.glb" id="8_bv1lo"]
-[ext_resource type="PackedScene" uid="uid://csrdapv51rgra" path="res://Assets/Platforms/Models/GLTF format/blockCurve.glb" id="9_gdrqp"]
-[ext_resource type="PackedScene" uid="uid://swjciovtqi6" path="res://Assets/Platforms/Models/GLTF format/blockCurveHalf.glb" id="10_sxt8k"]
-[ext_resource type="PackedScene" uid="uid://dyaekli62eitr" path="res://Assets/Platforms/Models/GLTF format/blockCurveLow.glb" id="11_yovog"]
-[ext_resource type="PackedScene" uid="uid://dwi54bqmquie5" path="res://Assets/Platforms/Models/GLTF format/blockDirt.glb" id="12_2qnir"]
-[ext_resource type="PackedScene" uid="uid://6rlenekr4sy" path="res://Assets/Platforms/Models/GLTF format/blockDirtHalf.glb" id="13_ysjgn"]
-[ext_resource type="PackedScene" uid="uid://d4cl1tl4rlyvf" path="res://Assets/Platforms/Models/GLTF format/blockDirtRamp.glb" id="14_0xiqm"]
-[ext_resource type="PackedScene" uid="uid://bjfe18w44bqgl" path="res://Assets/Platforms/Models/GLTF format/blockDirtRampHalf.glb" id="15_2yxwm"]
-[ext_resource type="PackedScene" uid="uid://dou3vbi2gmko8" path="res://Assets/Platforms/Models/GLTF format/blockEnd.glb" id="16_vej6d"]
-[ext_resource type="PackedScene" uid="uid://vovngpv6l1ds" path="res://Assets/Platforms/Models/GLTF format/blockHalf.glb" id="17_s2ova"]
-[ext_resource type="PackedScene" uid="uid://1c4pmjmto0wr" path="res://Assets/Platforms/Models/GLTF format/blockHexagon.glb" id="18_poius"]
-[ext_resource type="PackedScene" uid="uid://d2wmgtbcq3a2a" path="res://Assets/Platforms/Models/GLTF format/blockHexagonLow.glb" id="19_rsncl"]
-[ext_resource type="PackedScene" uid="uid://ym2vcd0813np" path="res://Assets/Platforms/Models/GLTF format/blockLarge.glb" id="20_iu84s"]
-[ext_resource type="PackedScene" uid="uid://cqahoet3bwi1q" path="res://Assets/Platforms/Models/GLTF format/blockLevel.glb" id="21_oupno"]
-[ext_resource type="PackedScene" uid="uid://ckc4nyhulcuk7" path="res://Assets/Platforms/Models/GLTF format/blockLong.glb" id="22_y14no"]
-[ext_resource type="PackedScene" uid="uid://bhijwamfchnt6" path="res://Assets/Platforms/Models/GLTF format/blockMoving.glb" id="23_1dff2"]
-[ext_resource type="PackedScene" uid="uid://c7ntewe0fuubf" path="res://Assets/Platforms/Models/GLTF format/blockMovingBlue.glb" id="24_3ylhb"]
-[ext_resource type="PackedScene" uid="uid://csxevoo8mu5ck" path="res://Assets/Platforms/Models/GLTF format/blockMovingLarge.glb" id="25_o87vh"]
-[ext_resource type="PackedScene" uid="uid://d0cn1qvkft3g7" path="res://Assets/Platforms/Models/GLTF format/blockQuarter.glb" id="26_wsynh"]
-[ext_resource type="PackedScene" uid="uid://c4ehuq8aieuvj" path="res://Assets/Platforms/Models/GLTF format/blockRounded.glb" id="27_4od02"]
-[ext_resource type="PackedScene" uid="uid://hg7ksekoal7v" path="res://Assets/Platforms/Models/GLTF format/blockRoundedLarge.glb" id="28_in0hi"]
-[ext_resource type="PackedScene" uid="uid://bb1cnh2u60hks" path="res://Assets/Platforms/Models/GLTF format/blockRoundedLong.glb" id="29_es3kt"]
-[ext_resource type="PackedScene" uid="uid://dg8f8bhvxg2ro" path="res://Assets/Platforms/Models/GLTF format/blockRoundedLow.glb" id="30_um05a"]
-[ext_resource type="PackedScene" uid="uid://dx3x75a65muo0" path="res://Assets/Platforms/Models/GLTF format/blockRoundedLowLong.glb" id="31_1c6wd"]
-[ext_resource type="PackedScene" uid="uid://ceguei42mkp6f" path="res://Assets/Platforms/Models/GLTF format/blockSlope.glb" id="32_5u25q"]
-[ext_resource type="PackedScene" uid="uid://cv2yo26mwhqul" path="res://Assets/Platforms/Models/GLTF format/blockSlopeHalf.glb" id="33_gg3ck"]
-[ext_resource type="PackedScene" uid="uid://7gyv4818amnp" path="res://Assets/Platforms/Models/GLTF format/blockSnow.glb" id="34_ts535"]
-[ext_resource type="PackedScene" uid="uid://by30svf1j5mhr" path="res://Assets/Platforms/Models/GLTF format/blockSnowCliff.glb" id="35_7mvn5"]
-[ext_resource type="PackedScene" uid="uid://df5nsm8duxbq8" path="res://Assets/Platforms/Models/GLTF format/blockSnowCliffCorner.glb" id="36_tu6po"]
-[ext_resource type="PackedScene" uid="uid://cxwq2bs4vj2og" path="res://Assets/Platforms/Models/GLTF format/blockSnowCornerLarge.glb" id="37_i8p2f"]
-[ext_resource type="PackedScene" uid="uid://dv4ht0u2mejeu" path="res://Assets/Platforms/Models/GLTF format/blockSnowCornerSmall.glb" id="38_udjar"]
-[ext_resource type="PackedScene" uid="uid://cyal26h4axgbg" path="res://Assets/Platforms/Models/GLTF format/blockSnowCurve.glb" id="39_gi5rc"]
-[ext_resource type="PackedScene" uid="uid://fnrai5jbc4ad" path="res://Assets/Platforms/Models/GLTF format/blockSnowCurveHalf.glb" id="40_ibqit"]
-[ext_resource type="PackedScene" uid="uid://qjrweyx0onwu" path="res://Assets/Platforms/Models/GLTF format/blockSnowCurveLow.glb" id="41_ety07"]
-[ext_resource type="PackedScene" uid="uid://clqo45m5l2lnt" path="res://Assets/Platforms/Models/GLTF format/blockSnowEnd.glb" id="42_femgj"]
-[ext_resource type="PackedScene" uid="uid://b30gijae3740s" path="res://Assets/Platforms/Models/GLTF format/blockSnowHalf.glb" id="43_xxi8x"]
-[ext_resource type="PackedScene" uid="uid://dix5kbss2e6pt" path="res://Assets/Platforms/Models/GLTF format/blockSnowHexagon.glb" id="44_dbem6"]
-[ext_resource type="PackedScene" uid="uid://dwjx21sqajtyj" path="res://Assets/Platforms/Models/GLTF format/blockSnowHexagonLow.glb" id="45_qpin3"]
-[ext_resource type="PackedScene" uid="uid://b427iroytu0ob" path="res://Assets/Platforms/Models/GLTF format/blockSnowLarge.glb" id="46_3o7d0"]
-[ext_resource type="PackedScene" uid="uid://cldhdq58381t4" path="res://Assets/Platforms/Models/GLTF format/blockSnowLevel.glb" id="47_6uxxu"]
-[ext_resource type="PackedScene" uid="uid://btx167demnpge" path="res://Assets/Platforms/Models/GLTF format/blockSnowLong.glb" id="48_4e0iy"]
-[ext_resource type="PackedScene" uid="uid://c78do2wjlgle5" path="res://Assets/Platforms/Models/GLTF format/blockSnowQuarter.glb" id="49_da1lg"]
-[ext_resource type="PackedScene" uid="uid://dxaqcwrgdd1ry" path="res://Assets/Platforms/Models/GLTF format/blockSnowRounded.glb" id="50_gvy6l"]
-[ext_resource type="PackedScene" uid="uid://qnwwviwvxxsb" path="res://Assets/Platforms/Models/GLTF format/blockSnowRoundedLarge.glb" id="51_wsiks"]
-[ext_resource type="PackedScene" uid="uid://bgdp0d6l7e1kb" path="res://Assets/Platforms/Models/GLTF format/blockSnowRoundedLong.glb" id="52_efks1"]
-[ext_resource type="PackedScene" uid="uid://dkongwwjlv741" path="res://Assets/Platforms/Models/GLTF format/blockSnowRoundedLow.glb" id="53_20ca3"]
-[ext_resource type="PackedScene" uid="uid://c1w30anpad0f4" path="res://Assets/Platforms/Models/GLTF format/blockSnowRoundedLowLong.glb" id="54_8xh1r"]
-[ext_resource type="PackedScene" uid="uid://dv0vtpgpvphei" path="res://Assets/Platforms/Models/GLTF format/blockSnowSlope.glb" id="55_b83hq"]
-[ext_resource type="PackedScene" uid="uid://de1fkn6xsdkm3" path="res://Assets/Platforms/Models/GLTF format/blockSnowSlopeHalf.glb" id="56_fsn0i"]
-[ext_resource type="PackedScene" uid="uid://bh7hfl7gfg756" path="res://Assets/Platforms/Models/GLTF format/bomb.glb" id="57_jxigq"]
-[ext_resource type="PackedScene" uid="uid://dfauwjwwak53w" path="res://Assets/Platforms/Models/GLTF format/bridge.glb" id="58_8jnms"]
-[ext_resource type="PackedScene" uid="uid://yibk700swtmf" path="res://Assets/Platforms/Models/GLTF format/bridgeHalf.glb" id="59_qu3nd"]
-[ext_resource type="PackedScene" uid="uid://dxdt82rx2vws0" path="res://Assets/Platforms/Models/GLTF format/bridgeRamp.glb" id="60_2jdmq"]
-[ext_resource type="PackedScene" uid="uid://b61w5lr4gktgm" path="res://Assets/Platforms/Models/GLTF format/buttonRound.glb" id="61_qp5i4"]
-[ext_resource type="PackedScene" uid="uid://dffcewatwu6jy" path="res://Assets/Platforms/Models/GLTF format/buttonSquare.glb" id="62_w1b2j"]
-[ext_resource type="PackedScene" uid="uid://gjt703t0m0i7" path="res://Assets/Platforms/Models/GLTF format/chest.glb" id="63_2t2s7"]
-[ext_resource type="PackedScene" uid="uid://bxjhbq6285dtm" path="res://Assets/Platforms/Models/GLTF format/coinBronze.glb" id="64_0fjik"]
-[ext_resource type="PackedScene" uid="uid://c5ftlly2tdyrn" path="res://Assets/Platforms/Models/GLTF format/coinGold.glb" id="65_atx4c"]
-[ext_resource type="PackedScene" uid="uid://datbijjf73c4f" path="res://Assets/Platforms/Models/GLTF format/coinSilver.glb" id="66_i0mr0"]
-[ext_resource type="PackedScene" uid="uid://dcfqjc1rttxxl" path="res://Assets/Platforms/Models/GLTF format/crate.glb" id="67_slltt"]
-[ext_resource type="PackedScene" uid="uid://c28pnq5x0sg77" path="res://Assets/Platforms/Models/GLTF format/crateItem.glb" id="68_p1bt0"]
-[ext_resource type="PackedScene" uid="uid://ui18g1yxygxh" path="res://Assets/Platforms/Models/GLTF format/crateItemStrong.glb" id="69_cywpx"]
-[ext_resource type="PackedScene" uid="uid://bbwcfvf2ceuuw" path="res://Assets/Platforms/Models/GLTF format/crateStrong.glb" id="70_fws3m"]
-[ext_resource type="PackedScene" uid="uid://f42704t2nex0" path="res://Assets/Platforms/Models/GLTF format/doorClosed.glb" id="71_sfptk"]
-[ext_resource type="PackedScene" uid="uid://b0bhxbjwuutce" path="res://Assets/Platforms/Models/GLTF format/doorLargeClosed.glb" id="72_bauta"]
-[ext_resource type="PackedScene" uid="uid://dd87knh3xo6cu" path="res://Assets/Platforms/Models/GLTF format/doorLargeOpen.glb" id="73_rckp5"]
-[ext_resource type="PackedScene" uid="uid://dumsxvmc032yr" path="res://Assets/Platforms/Models/GLTF format/doorOpen.glb" id="74_4mv5p"]
-[ext_resource type="PackedScene" uid="uid://cv1ggt1rchsni" path="res://Assets/Platforms/Models/GLTF format/fence.glb" id="75_4eoyu"]
-[ext_resource type="PackedScene" uid="uid://d2nnq6o2xmkw2" path="res://Assets/Platforms/Models/GLTF format/fenceBroken.glb" id="76_mtcgm"]
-[ext_resource type="PackedScene" uid="uid://cseq5vae3syro" path="res://Assets/Platforms/Models/GLTF format/fenceCorner.glb" id="77_iviaw"]
-[ext_resource type="PackedScene" uid="uid://dddnvm2q880e6" path="res://Assets/Platforms/Models/GLTF format/fenceCornerCurved.glb" id="78_cdj71"]
-[ext_resource type="PackedScene" uid="uid://b2yn0d8fg5prr" path="res://Assets/Platforms/Models/GLTF format/fenceLow.glb" id="79_xaep5"]
-[ext_resource type="PackedScene" uid="uid://ch83287xt7cri" path="res://Assets/Platforms/Models/GLTF format/fenceLowBroken.glb" id="80_j7fqd"]
-[ext_resource type="PackedScene" uid="uid://8sdw1upctmis" path="res://Assets/Platforms/Models/GLTF format/fenceLowCorner.glb" id="81_nhu1g"]
-[ext_resource type="PackedScene" uid="uid://b1br6t1fd1ovb" path="res://Assets/Platforms/Models/GLTF format/fenceLowCornerCurved.glb" id="82_g8xbn"]
-[ext_resource type="PackedScene" uid="uid://uvs5bwto80us" path="res://Assets/Platforms/Models/GLTF format/flag.glb" id="83_3y3ag"]
-[ext_resource type="PackedScene" uid="uid://c63ybct3f5yog" path="res://Assets/Platforms/Models/GLTF format/flowers.glb" id="84_7thbj"]
-[ext_resource type="PackedScene" uid="uid://cjtp4gseircye" path="res://Assets/Platforms/Models/GLTF format/flowersLow.glb" id="85_5btux"]
-[ext_resource type="PackedScene" uid="uid://b3wq0nxnt8hnu" path="res://Assets/Platforms/Models/GLTF format/heart.glb" id="86_qkclg"]
-[ext_resource type="PackedScene" uid="uid://cjkvj73ase6qr" path="res://Assets/Platforms/Models/GLTF format/hedge.glb" id="87_gkmla"]
-[ext_resource type="PackedScene" uid="uid://ct7xy65tr78id" path="res://Assets/Platforms/Models/GLTF format/hedgeCorner.glb" id="88_fbbgk"]
-[ext_resource type="PackedScene" uid="uid://b073nl41hmfc4" path="res://Assets/Platforms/Models/GLTF format/jewel.glb" id="89_fnarm"]
-[ext_resource type="PackedScene" uid="uid://07vvc65wgdur" path="res://Assets/Platforms/Models/GLTF format/key.glb" id="90_c2gg6"]
-[ext_resource type="PackedScene" uid="uid://bksj74ljc4ksu" path="res://Assets/Platforms/Models/GLTF format/ladder.glb" id="91_p0mia"]
-[ext_resource type="PackedScene" uid="uid://qhdyg10b1gm5" path="res://Assets/Platforms/Models/GLTF format/ladderBroken.glb" id="92_fx7sa"]
-[ext_resource type="PackedScene" uid="uid://e7myg1eo65ug" path="res://Assets/Platforms/Models/GLTF format/ladderLong.glb" id="93_t32gt"]
-[ext_resource type="PackedScene" uid="uid://d3pfw8ox763q2" path="res://Assets/Platforms/Models/GLTF format/lever.glb" id="94_1gy2d"]
-[ext_resource type="PackedScene" uid="uid://bn4cyf2j83c2d" path="res://Assets/Platforms/Models/GLTF format/lock.glb" id="95_0fseu"]
-[ext_resource type="PackedScene" uid="uid://dvrjrawbmc4sx" path="res://Assets/Platforms/Models/GLTF format/mushrooms.glb" id="96_ck4hk"]
-[ext_resource type="PackedScene" uid="uid://du0t6oows04ci" path="res://Assets/Platforms/Models/GLTF format/plant.glb" id="97_dyv1p"]
-[ext_resource type="PackedScene" uid="uid://cdnh5xcpfwvwu" path="res://Assets/Platforms/Models/GLTF format/platform.glb" id="98_h2rl0"]
-[ext_resource type="PackedScene" uid="uid://3w0gh7ghgpyf" path="res://Assets/Platforms/Models/GLTF format/poles.glb" id="99_c06nn"]
-[ext_resource type="PackedScene" uid="uid://bdtbjwmuqhv5x" path="res://Assets/Platforms/Models/GLTF format/rocks.glb" id="100_y0r10"]
-[ext_resource type="PackedScene" uid="uid://b7sba5cdsfyrw" path="res://Assets/Platforms/Models/GLTF format/saw.glb" id="101_gk4d1"]
-[ext_resource type="PackedScene" uid="uid://bgm87iflvahr4" path="res://Assets/Platforms/Models/GLTF format/sign.glb" id="102_y14pr"]
-[ext_resource type="PackedScene" uid="uid://c524v2sm4lrw" path="res://Assets/Platforms/Models/GLTF format/spikeBlock.glb" id="103_n4p7k"]
-[ext_resource type="PackedScene" uid="uid://y77h146sn27a" path="res://Assets/Platforms/Models/GLTF format/spikeBlockWide.glb" id="104_mg1qf"]
-[ext_resource type="PackedScene" uid="uid://7rq6idka5l6o" path="res://Assets/Platforms/Models/GLTF format/spikes.glb" id="105_vanar"]
-[ext_resource type="PackedScene" uid="uid://dsm2hdr38xjxt" path="res://Assets/Platforms/Models/GLTF format/spikesHidden.glb" id="106_75ioh"]
-[ext_resource type="PackedScene" uid="uid://hlpolw45b5pb" path="res://Assets/Platforms/Models/GLTF format/spikesLarge.glb" id="107_yl4q8"]
-[ext_resource type="PackedScene" uid="uid://dgstwh271u33m" path="res://Assets/Platforms/Models/GLTF format/stones.glb" id="108_cd32x"]
-[ext_resource type="PackedScene" uid="uid://ckmjwhow76f1i" path="res://Assets/Platforms/Models/GLTF format/tree.glb" id="109_x8ser"]
-[ext_resource type="PackedScene" uid="uid://doysj5ydtu2us" path="res://Assets/Platforms/Models/GLTF format/treePine.glb" id="110_xf6pc"]
-[ext_resource type="PackedScene" uid="uid://4sqvpdsbhe1i" path="res://Assets/Platforms/Models/GLTF format/treePineSmall.glb" id="111_fqrj8"]
-[ext_resource type="PackedScene" uid="uid://caad6sptp7h7s" path="res://Assets/Platforms/Models/GLTF format/treePineSmallSnow.glb" id="112_kshgm"]
-[ext_resource type="PackedScene" uid="uid://miedh1q2ousc" path="res://Assets/Platforms/Models/GLTF format/treePineSnow.glb" id="113_6i1ky"]
-[ext_resource type="PackedScene" uid="uid://b00i1qojutvwa" path="res://Assets/Platforms/Models/GLTF format/treeSnow.glb" id="114_vcuxw"]
+[ext_resource type="PackedScene" uid="uid://bpc2wnxhtimoi" path="res://Assets/Mini Dungeon/GLB format/banner.glb" id="1_8yw1x"]
+[ext_resource type="PackedScene" uid="uid://vj2kt5bhj5ir" path="res://Assets/Mini Dungeon/GLB format/barrel.glb" id="2_adg57"]
+[ext_resource type="PackedScene" uid="uid://4ar350tbm1kx" path="res://Assets/Mini Dungeon/GLB format/character-human.glb" id="3_usfmr"]
+[ext_resource type="PackedScene" uid="uid://bo2emc7aklmvh" path="res://Assets/Mini Dungeon/GLB format/character-orc.glb" id="4_qe0lh"]
+[ext_resource type="PackedScene" uid="uid://dmbcp2beiabkj" path="res://Assets/Mini Dungeon/GLB format/chest.glb" id="5_r3t36"]
+[ext_resource type="PackedScene" uid="uid://dbql4qrmgitsb" path="res://Assets/Mini Dungeon/GLB format/coin.glb" id="6_r8kbf"]
+[ext_resource type="PackedScene" uid="uid://digxmffroraqv" path="res://Assets/Mini Dungeon/GLB format/column.glb" id="7_kjkm6"]
+[ext_resource type="PackedScene" uid="uid://y5gyl7i87n8y" path="res://Assets/Mini Dungeon/GLB format/dirt.glb" id="8_572mx"]
+[ext_resource type="PackedScene" uid="uid://bjl3du771b61y" path="res://Assets/Mini Dungeon/GLB format/floor-detail.glb" id="9_gfjuk"]
+[ext_resource type="Texture2D" uid="uid://bor5iq6flauxy" path="res://Assets/Mini Dungeon/GLB format/Textures/colormap.png" id="10_csci7"]
+[ext_resource type="PackedScene" uid="uid://b2rlps3jny5dd" path="res://Assets/Mini Dungeon/GLB format/gate.glb" id="11_bhq6p"]
+[ext_resource type="PackedScene" uid="uid://bu56gw0pbd7nl" path="res://Assets/Mini Dungeon/GLB format/rocks.glb" id="12_n8p1v"]
+[ext_resource type="PackedScene" uid="uid://fbmu7a5y08jc" path="res://Assets/Mini Dungeon/GLB format/stairs.glb" id="13_ndtf7"]
+[ext_resource type="PackedScene" uid="uid://txbg2e0mry2p" path="res://Assets/Mini Dungeon/GLB format/stones.glb" id="14_cimvt"]
+[ext_resource type="PackedScene" uid="uid://cwyenx3gdau21" path="res://Assets/Mini Dungeon/GLB format/trap.glb" id="15_83brc"]
+[ext_resource type="PackedScene" uid="uid://dlmsup28to0ah" path="res://Assets/Mini Dungeon/GLB format/wall-half.glb" id="16_kwedr"]
+[ext_resource type="PackedScene" uid="uid://ykeb6bb3x6qe" path="res://Assets/Mini Dungeon/GLB format/wall-narrow.glb" id="17_ccupp"]
+[ext_resource type="PackedScene" uid="uid://5vyknygmsxhp" path="res://Assets/Mini Dungeon/GLB format/wall-opening.glb" id="18_3gouw"]
+[ext_resource type="PackedScene" uid="uid://240130xtjxyp" path="res://Assets/Mini Dungeon/GLB format/wood-structure.glb" id="20_0ncqh"]
+[ext_resource type="PackedScene" uid="uid://frbjbev0trtm" path="res://Assets/Mini Dungeon/GLB format/wood-support.glb" id="21_54i1e"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_iucvt"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xsy3l"]
+resource_name = "colormap"
+cull_mode = 2
+albedo_texture = ExtResource("10_csci7")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_in46t"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 1, 0, 3, 0, 2, 0),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 0, 0, 0, 0, 0, 0, 254, 255, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_o21y4"]
+resource_name = "floor_floor"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1.00001, 1e-05, 1),
+"attribute_data": PackedByteArray(255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 1, 0, 3, 0, 2, 0),
+"material": SubResource("StandardMaterial3D_xsy3l"),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 0, 0, 0, 0, 255, 255, 254, 255, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_in46t")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_oyx7t"]
+points = PackedVector3Array(0.499995, 0, 0.5, -0.5, 0, 0.5, 0.499995, 0, -0.5, -0.5, 0, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mv86"]
+resource_name = "colormap"
+cull_mode = 2
+albedo_texture = ExtResource("10_csci7")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_waykc"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1.1, 1),
+"format": 34896613377,
+"index_count": 558,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 1, 0, 3, 0, 2, 0, 6, 0, 4, 0, 5, 0, 5, 0, 7, 0, 6, 0, 6, 0, 7, 0, 8, 0, 8, 0, 9, 0, 6, 0, 11, 0, 10, 0, 4, 0, 4, 0, 6, 0, 11, 0, 6, 0, 12, 0, 11, 0, 6, 0, 9, 0, 12, 0, 15, 0, 13, 0, 14, 0, 14, 0, 16, 0, 15, 0, 5, 0, 17, 0, 18, 0, 18, 0, 7, 0, 5, 0, 18, 0, 19, 0, 7, 0, 19, 0, 8, 0, 7, 0, 20, 0, 15, 0, 16, 0, 16, 0, 21, 0, 20, 0, 22, 0, 20, 0, 21, 0, 21, 0, 23, 0, 22, 0, 25, 0, 24, 0, 13, 0, 13, 0, 15, 0, 25, 0, 22, 0, 25, 0, 15, 0, 15, 0, 20, 0, 22, 0, 27, 0, 26, 0, 25, 0, 25, 0, 22, 0, 27, 0, 22, 0, 28, 0, 27, 0, 28, 0, 29, 0, 27, 0, 22, 0, 23, 0, 28, 0, 30, 0, 28, 0, 23, 0, 31, 0, 30, 0, 23, 0, 31, 0, 32, 0, 30, 0, 33, 0, 31, 0, 23, 0, 23, 0, 34, 0, 33, 0, 23, 0, 21, 0, 16, 0, 34, 0, 23, 0, 16, 0, 35, 0, 34, 0, 16, 0, 16, 0, 14, 0, 35, 0, 38, 0, 36, 0, 37, 0, 37, 0, 39, 0, 38, 0, 42, 0, 40, 0, 41, 0, 41, 0, 43, 0, 42, 0, 38, 0, 39, 0, 41, 0, 41, 0, 40, 0, 38, 0, 27, 0, 44, 0, 45, 0, 26, 0, 27, 0, 45, 0, 46, 0, 26, 0, 45, 0, 36, 0, 46, 0, 45, 0, 36, 0, 45, 0, 47, 0, 37, 0, 36, 0, 47, 0, 37, 0, 47, 0, 48, 0, 49, 0, 37, 0, 48, 0, 50, 0, 37, 0, 49, 0, 48, 0, 51, 0, 49, 0, 42, 0, 52, 0, 46, 0, 46, 0, 40, 0, 42, 0, 46, 0, 36, 0, 40, 0, 36, 0, 38, 0, 40, 0, 50, 0, 53, 0, 43, 0, 43, 0, 41, 0, 50, 0, 41, 0, 37, 0, 50, 0, 41, 0, 39, 0, 37, 0, 54, 0, 3, 0, 1, 0, 1, 0, 55, 0, 54, 0, 54, 0, 55, 0, 56, 0, 56, 0, 57, 0, 54, 0, 59, 0, 58, 0, 56, 0, 56, 0, 1, 0, 59, 0, 1, 0, 0, 0, 59, 0, 55, 0, 1, 0, 56, 0, 54, 0, 57, 0, 60, 0, 60, 0, 3, 0, 54, 0, 3, 0, 60, 0, 61, 0, 61, 0, 2, 0, 3, 0, 63, 0, 62, 0, 60, 0, 60, 0, 57, 0, 63, 0, 57, 0, 64, 0, 63, 0, 64, 0, 65, 0, 63, 0, 57, 0, 56, 0, 64, 0, 66, 0, 64, 0, 56, 0, 51, 0, 66, 0, 56, 0, 51, 0, 67, 0, 66, 0, 51, 0, 56, 0, 58, 0, 58, 0, 49, 0, 51, 0, 64, 0, 66, 0, 68, 0, 68, 0, 69, 0, 64, 0, 71, 0, 70, 0, 69, 0, 69, 0, 72, 0, 71, 0, 28, 0, 30, 0, 72, 0, 72, 0, 73, 0, 28, 0, 73, 0, 68, 0, 47, 0, 47, 0, 45, 0, 73, 0, 75, 0, 74, 0, 68, 0, 68, 0, 73, 0, 75, 0, 68, 0, 74, 0, 76, 0, 76, 0, 69, 0, 68, 0, 72, 0, 69, 0, 76, 0, 76, 0, 77, 0, 72, 0, 72, 0, 77, 0, 75, 0, 75, 0, 73, 0, 72, 0, 78, 0, 44, 0, 27, 0, 27, 0, 29, 0, 78, 0, 78, 0, 73, 0, 45, 0, 45, 0, 44, 0, 78, 0, 28, 0, 73, 0, 78, 0, 78, 0, 29, 0, 28, 0, 80, 0, 79, 0, 32, 0, 32, 0, 31, 0, 80, 0, 32, 0, 79, 0, 72, 0, 72, 0, 30, 0, 32, 0, 80, 0, 71, 0, 72, 0, 72, 0, 79, 0, 80, 0, 63, 0, 65, 0, 81, 0, 81, 0, 82, 0, 63, 0, 81, 0, 69, 0, 70, 0, 70, 0, 82, 0, 81, 0, 81, 0, 65, 0, 64, 0, 64, 0, 69, 0, 81, 0, 67, 0, 51, 0, 48, 0, 48, 0, 83, 0, 67, 0, 68, 0, 66, 0, 67, 0, 67, 0, 83, 0, 68, 0, 48, 0, 47, 0, 68, 0, 68, 0, 83, 0, 48, 0, 33, 0, 11, 0, 12, 0, 12, 0, 71, 0, 33, 0, 71, 0, 12, 0, 19, 0, 71, 0, 80, 0, 33, 0, 80, 0, 31, 0, 33, 0, 70, 0, 71, 0, 19, 0, 70, 0, 19, 0, 18, 0, 63, 0, 70, 0, 18, 0, 82, 0, 70, 0, 63, 0, 18, 0, 62, 0, 63, 0, 12, 0, 9, 0, 8, 0, 8, 0, 19, 0, 12, 0, 17, 0, 10, 0, 11, 0, 11, 0, 18, 0, 17, 0, 58, 0, 59, 0, 61, 0, 61, 0, 60, 0, 58, 0, 50, 0, 46, 0, 52, 0, 52, 0, 53, 0, 50, 0, 35, 0, 24, 0, 25, 0, 25, 0, 34, 0, 35, 0, 86, 0, 84, 0, 85, 0, 85, 0, 87, 0, 86, 0, 89, 0, 88, 0, 85, 0, 85, 0, 84, 0, 89, 0, 90, 0, 87, 0, 85, 0, 85, 0, 88, 0, 90, 0, 91, 0, 86, 0, 87, 0, 87, 0, 90, 0, 91, 0, 94, 0, 92, 0, 93, 0, 93, 0, 95, 0, 94, 0, 97, 0, 96, 0, 93, 0, 93, 0, 92, 0, 97, 0, 98, 0, 95, 0, 93, 0, 93, 0, 96, 0, 98, 0, 99, 0, 94, 0, 95, 0, 95, 0, 98, 0, 99, 0, 102, 0, 100, 0, 101, 0, 101, 0, 103, 0, 102, 0, 105, 0, 104, 0, 101, 0, 101, 0, 100, 0, 105, 0, 106, 0, 103, 0, 101, 0, 101, 0, 104, 0, 106, 0, 107, 0, 102, 0, 103, 0, 103, 0, 106, 0, 107, 0, 110, 0, 108, 0, 109, 0, 109, 0, 111, 0, 110, 0, 113, 0, 112, 0, 109, 0, 109, 0, 108, 0, 113, 0, 114, 0, 111, 0, 109, 0, 109, 0, 112, 0, 114, 0, 115, 0, 110, 0, 111, 0, 111, 0, 114, 0, 115, 0, 2, 0, 61, 0, 59, 0, 59, 0, 0, 0, 2, 0, 13, 0, 24, 0, 35, 0, 35, 0, 14, 0, 13, 0, 10, 0, 17, 0, 5, 0, 5, 0, 4, 0, 10, 0, 42, 0, 43, 0, 53, 0, 53, 0, 52, 0, 42, 0, 74, 0, 75, 0, 77, 0, 77, 0, 76, 0, 74, 0),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 116,
+"vertex_data": PackedByteArray(204, 204, 232, 162, 153, 25, 0, 0, 204, 204, 232, 162, 204, 12, 0, 0, 50, 51, 232, 162, 153, 25, 0, 0, 50, 51, 232, 162, 204, 12, 0, 0, 153, 25, 232, 162, 204, 204, 0, 0, 153, 25, 232, 162, 50, 51, 0, 0, 204, 12, 232, 162, 204, 204, 0, 0, 204, 12, 232, 162, 50, 51, 0, 0, 204, 12, 115, 209, 50, 51, 0, 0, 204, 12, 115, 209, 204, 204, 0, 0, 153, 25, 0, 0, 204, 204, 0, 0, 0, 0, 0, 0, 204, 204, 0, 0, 0, 0, 115, 209, 204, 204, 0, 0, 204, 204, 232, 162, 101, 230, 0, 0, 50, 51, 232, 162, 101, 230, 0, 0, 204, 204, 232, 162, 50, 243, 0, 0, 50, 51, 232, 162, 50, 243, 0, 0, 153, 25, 0, 0, 50, 51, 0, 0, 0, 0, 0, 0, 50, 51, 0, 0, 0, 0, 115, 209, 50, 51, 0, 0, 204, 204, 115, 209, 50, 243, 0, 0, 50, 51, 115, 209, 50, 243, 0, 0, 204, 204, 115, 209, 255, 255, 0, 0, 50, 51, 115, 209, 255, 255, 0, 0, 204, 204, 0, 0, 101, 230, 0, 0, 204, 204, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 255, 255, 255, 255, 0, 0, 204, 204, 185, 232, 255, 255, 0, 0, 204, 204, 255, 255, 255, 255, 0, 0, 50, 51, 185, 232, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 50, 51, 255, 255, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 50, 51, 0, 0, 255, 255, 0, 0, 50, 51, 0, 0, 101, 230, 0, 0, 255, 255, 115, 209, 204, 204, 0, 0, 255, 255, 115, 209, 50, 51, 0, 0, 50, 243, 115, 209, 204, 204, 0, 0, 50, 243, 115, 209, 50, 51, 0, 0, 50, 243, 232, 162, 204, 204, 0, 0, 50, 243, 232, 162, 50, 51, 0, 0, 101, 230, 232, 162, 204, 204, 0, 0, 101, 230, 232, 162, 50, 51, 0, 0, 255, 255, 255, 255, 204, 204, 0, 0, 255, 255, 185, 232, 204, 204, 0, 0, 255, 255, 0, 0, 204, 204, 0, 0, 255, 255, 185, 232, 50, 51, 0, 0, 255, 255, 255, 255, 50, 51, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 50, 51, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 101, 230, 0, 0, 204, 204, 0, 0, 101, 230, 0, 0, 50, 51, 0, 0, 50, 51, 115, 209, 204, 12, 0, 0, 204, 204, 115, 209, 204, 12, 0, 0, 204, 204, 115, 209, 0, 0, 0, 0, 50, 51, 115, 209, 0, 0, 0, 0, 204, 204, 0, 0, 0, 0, 0, 0, 204, 204, 0, 0, 153, 25, 0, 0, 50, 51, 0, 0, 0, 0, 0, 0, 50, 51, 0, 0, 153, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 50, 51, 185, 232, 0, 0, 0, 0, 50, 51, 255, 255, 0, 0, 0, 0, 204, 204, 185, 232, 0, 0, 0, 0, 204, 204, 255, 255, 0, 0, 0, 0, 204, 204, 185, 232, 50, 51, 0, 0, 50, 51, 185, 232, 50, 51, 0, 0, 0, 0, 185, 232, 50, 51, 0, 0, 0, 0, 185, 232, 204, 204, 0, 0, 50, 51, 185, 232, 204, 204, 0, 0, 204, 204, 185, 232, 204, 204, 0, 0, 204, 204, 115, 209, 50, 51, 0, 0, 204, 204, 115, 209, 204, 204, 0, 0, 50, 51, 115, 209, 50, 51, 0, 0, 50, 51, 115, 209, 204, 204, 0, 0, 204, 204, 255, 255, 204, 204, 0, 0, 50, 51, 255, 255, 204, 204, 0, 0, 0, 0, 255, 255, 204, 204, 0, 0, 50, 51, 255, 255, 50, 51, 0, 0, 0, 0, 255, 255, 50, 51, 0, 0, 204, 204, 255, 255, 50, 51, 0, 0, 204, 76, 232, 162, 50, 243, 0, 0, 153, 89, 232, 162, 255, 255, 0, 0, 50, 179, 232, 162, 50, 243, 0, 0, 101, 166, 232, 162, 255, 255, 0, 0, 153, 89, 115, 209, 255, 255, 0, 0, 204, 76, 115, 209, 50, 243, 0, 0, 101, 166, 115, 209, 255, 255, 0, 0, 50, 179, 115, 209, 50, 243, 0, 0, 204, 12, 232, 162, 204, 76, 0, 0, 0, 0, 232, 162, 153, 89, 0, 0, 204, 12, 232, 162, 50, 179, 0, 0, 0, 0, 232, 162, 101, 166, 0, 0, 0, 0, 115, 209, 153, 89, 0, 0, 204, 12, 115, 209, 204, 76, 0, 0, 0, 0, 115, 209, 101, 166, 0, 0, 204, 12, 115, 209, 50, 179, 0, 0, 50, 179, 232, 162, 204, 12, 0, 0, 101, 166, 232, 162, 0, 0, 0, 0, 204, 76, 232, 162, 204, 12, 0, 0, 153, 89, 232, 162, 0, 0, 0, 0, 101, 166, 115, 209, 0, 0, 0, 0, 50, 179, 115, 209, 204, 12, 0, 0, 153, 89, 115, 209, 0, 0, 0, 0, 204, 76, 115, 209, 204, 12, 0, 0, 50, 243, 232, 162, 50, 179, 0, 0, 255, 255, 232, 162, 101, 166, 0, 0, 50, 243, 232, 162, 204, 76, 0, 0, 255, 255, 232, 162, 153, 89, 0, 0, 255, 255, 115, 209, 101, 166, 0, 0, 50, 243, 115, 209, 50, 179, 0, 0, 255, 255, 115, 209, 153, 89, 0, 0, 50, 243, 115, 209, 204, 76, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ycvfe"]
+resource_name = "wall_wall"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1.1, 1),
+"attribute_data": PackedByteArray(255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 180, 207, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 3, 217, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 180, 207, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 3, 217, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 180, 207, 255, 151, 3, 217, 255, 151, 152, 249, 255, 151, 3, 217, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 13, 203, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 13, 203, 255, 151, 180, 207, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 13, 203, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 180, 207, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 101, 198, 255, 151, 152, 249, 255, 151, 152, 249, 255, 151, 101, 198, 255, 151, 101, 198, 255, 119, 152, 249, 255, 119, 152, 249, 255, 119, 3, 217, 255, 119, 3, 217, 255, 119, 152, 249, 255, 119, 152, 249, 255, 119, 3, 217, 255, 119, 3, 217, 255, 119, 152, 249, 255, 119, 3, 217, 255, 119, 152, 249, 255, 119, 3, 217, 255, 119, 3, 217, 255, 119, 152, 249, 255, 119, 3, 217, 255, 119, 152, 249, 255, 119, 180, 207, 255, 119, 180, 207, 255, 119, 180, 207, 255, 119, 180, 207),
+"format": 34896613399,
+"index_count": 558,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 1, 0, 3, 0, 2, 0, 6, 0, 4, 0, 5, 0, 5, 0, 7, 0, 6, 0, 10, 0, 8, 0, 9, 0, 9, 0, 11, 0, 10, 0, 14, 0, 12, 0, 13, 0, 13, 0, 15, 0, 14, 0, 15, 0, 16, 0, 14, 0, 15, 0, 17, 0, 16, 0, 20, 0, 18, 0, 19, 0, 19, 0, 21, 0, 20, 0, 24, 0, 22, 0, 23, 0, 23, 0, 25, 0, 24, 0, 23, 0, 26, 0, 25, 0, 26, 0, 27, 0, 25, 0, 30, 0, 28, 0, 29, 0, 29, 0, 31, 0, 30, 0, 34, 0, 32, 0, 33, 0, 33, 0, 35, 0, 34, 0, 38, 0, 36, 0, 37, 0, 37, 0, 39, 0, 38, 0, 40, 0, 38, 0, 39, 0, 39, 0, 41, 0, 40, 0, 44, 0, 42, 0, 43, 0, 43, 0, 45, 0, 44, 0, 45, 0, 46, 0, 44, 0, 46, 0, 47, 0, 44, 0, 45, 0, 48, 0, 46, 0, 49, 0, 46, 0, 48, 0, 50, 0, 49, 0, 48, 0, 50, 0, 51, 0, 49, 0, 52, 0, 50, 0, 48, 0, 48, 0, 53, 0, 52, 0, 56, 0, 54, 0, 55, 0, 57, 0, 56, 0, 55, 0, 58, 0, 57, 0, 55, 0, 55, 0, 59, 0, 58, 0, 62, 0, 60, 0, 61, 0, 61, 0, 63, 0, 62, 0, 66, 0, 64, 0, 65, 0, 65, 0, 67, 0, 66, 0, 70, 0, 68, 0, 69, 0, 69, 0, 71, 0, 70, 0, 74, 0, 72, 0, 73, 0, 75, 0, 74, 0, 73, 0, 76, 0, 75, 0, 73, 0, 77, 0, 76, 0, 73, 0, 77, 0, 73, 0, 78, 0, 79, 0, 77, 0, 78, 0, 79, 0, 78, 0, 80, 0, 81, 0, 79, 0, 80, 0, 82, 0, 79, 0, 81, 0, 80, 0, 83, 0, 81, 0, 86, 0, 84, 0, 85, 0, 85, 0, 87, 0, 86, 0, 85, 0, 88, 0, 87, 0, 88, 0, 89, 0, 87, 0, 92, 0, 90, 0, 91, 0, 91, 0, 93, 0, 92, 0, 93, 0, 94, 0, 92, 0, 93, 0, 95, 0, 94, 0, 98, 0, 96, 0, 97, 0, 97, 0, 99, 0, 98, 0, 102, 0, 100, 0, 101, 0, 101, 0, 103, 0, 102, 0, 106, 0, 104, 0, 105, 0, 105, 0, 107, 0, 106, 0, 107, 0, 108, 0, 106, 0, 109, 0, 107, 0, 105, 0, 112, 0, 110, 0, 111, 0, 111, 0, 113, 0, 112, 0, 113, 0, 111, 0, 114, 0, 114, 0, 115, 0, 113, 0, 118, 0, 116, 0, 117, 0, 117, 0, 119, 0, 118, 0, 119, 0, 120, 0, 118, 0, 120, 0, 121, 0, 118, 0, 119, 0, 122, 0, 120, 0, 123, 0, 120, 0, 122, 0, 124, 0, 123, 0, 122, 0, 124, 0, 125, 0, 123, 0, 124, 0, 122, 0, 126, 0, 126, 0, 127, 0, 124, 0, 130, 0, 128, 0, 129, 0, 129, 0, 131, 0, 130, 0, 133, 0, 132, 0, 131, 0, 131, 0, 134, 0, 133, 0, 136, 0, 135, 0, 134, 0, 134, 0, 137, 0, 136, 0, 137, 0, 129, 0, 138, 0, 138, 0, 139, 0, 137, 0, 142, 0, 140, 0, 141, 0, 141, 0, 143, 0, 142, 0, 146, 0, 144, 0, 145, 0, 145, 0, 147, 0, 146, 0, 150, 0, 148, 0, 149, 0, 149, 0, 151, 0, 150, 0, 154, 0, 152, 0, 153, 0, 153, 0, 155, 0, 154, 0, 158, 0, 156, 0, 157, 0, 157, 0, 159, 0, 158, 0, 162, 0, 160, 0, 161, 0, 161, 0, 163, 0, 162, 0, 166, 0, 164, 0, 165, 0, 165, 0, 167, 0, 166, 0, 170, 0, 168, 0, 169, 0, 169, 0, 171, 0, 170, 0, 174, 0, 172, 0, 173, 0, 173, 0, 175, 0, 174, 0, 178, 0, 176, 0, 177, 0, 177, 0, 179, 0, 178, 0, 182, 0, 180, 0, 181, 0, 181, 0, 183, 0, 182, 0, 186, 0, 184, 0, 185, 0, 185, 0, 187, 0, 186, 0, 190, 0, 188, 0, 189, 0, 189, 0, 191, 0, 190, 0, 194, 0, 192, 0, 193, 0, 193, 0, 195, 0, 194, 0, 198, 0, 196, 0, 197, 0, 197, 0, 199, 0, 198, 0, 202, 0, 200, 0, 201, 0, 201, 0, 203, 0, 202, 0, 206, 0, 204, 0, 205, 0, 205, 0, 207, 0, 206, 0, 207, 0, 205, 0, 208, 0, 207, 0, 209, 0, 206, 0, 209, 0, 210, 0, 206, 0, 211, 0, 207, 0, 208, 0, 211, 0, 208, 0, 212, 0, 213, 0, 211, 0, 212, 0, 214, 0, 211, 0, 213, 0, 212, 0, 215, 0, 213, 0, 218, 0, 216, 0, 217, 0, 217, 0, 219, 0, 218, 0, 222, 0, 220, 0, 221, 0, 221, 0, 223, 0, 222, 0, 226, 0, 224, 0, 225, 0, 225, 0, 227, 0, 226, 0, 230, 0, 228, 0, 229, 0, 229, 0, 231, 0, 230, 0, 234, 0, 232, 0, 233, 0, 233, 0, 235, 0, 234, 0, 238, 0, 236, 0, 237, 0, 237, 0, 239, 0, 238, 0, 242, 0, 240, 0, 241, 0, 241, 0, 243, 0, 242, 0, 246, 0, 244, 0, 245, 0, 245, 0, 247, 0, 246, 0, 250, 0, 248, 0, 249, 0, 249, 0, 251, 0, 250, 0, 254, 0, 252, 0, 253, 0, 253, 0, 255, 0, 254, 0, 2, 1, 0, 1, 1, 1, 1, 1, 3, 1, 2, 1, 6, 1, 4, 1, 5, 1, 5, 1, 7, 1, 6, 1, 10, 1, 8, 1, 9, 1, 9, 1, 11, 1, 10, 1, 14, 1, 12, 1, 13, 1, 13, 1, 15, 1, 14, 1, 18, 1, 16, 1, 17, 1, 17, 1, 19, 1, 18, 1, 22, 1, 20, 1, 21, 1, 21, 1, 23, 1, 22, 1, 26, 1, 24, 1, 25, 1, 25, 1, 27, 1, 26, 1, 30, 1, 28, 1, 29, 1, 29, 1, 31, 1, 30, 1, 34, 1, 32, 1, 33, 1, 33, 1, 35, 1, 34, 1, 38, 1, 36, 1, 37, 1, 37, 1, 39, 1, 38, 1, 42, 1, 40, 1, 41, 1, 41, 1, 43, 1, 42, 1, 46, 1, 44, 1, 45, 1, 45, 1, 47, 1, 46, 1, 50, 1, 48, 1, 49, 1, 49, 1, 51, 1, 50, 1, 54, 1, 52, 1, 53, 1, 53, 1, 55, 1, 54, 1, 58, 1, 56, 1, 57, 1, 57, 1, 59, 1, 58, 1, 62, 1, 60, 1, 61, 1, 61, 1, 63, 1, 62, 1),
+"material": SubResource("StandardMaterial3D_3mv86"),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 320,
+"vertex_data": PackedByteArray(204, 204, 232, 162, 153, 25, 255, 191, 204, 204, 232, 162, 204, 12, 255, 223, 50, 51, 232, 162, 153, 25, 255, 191, 50, 51, 232, 162, 204, 12, 255, 223, 153, 25, 232, 162, 204, 204, 255, 191, 153, 25, 232, 162, 50, 51, 255, 191, 204, 12, 232, 162, 204, 204, 252, 197, 204, 12, 232, 162, 50, 51, 252, 197, 204, 12, 232, 162, 50, 51, 252, 197, 204, 12, 115, 209, 50, 51, 255, 191, 204, 12, 232, 162, 204, 204, 252, 197, 204, 12, 115, 209, 204, 204, 255, 191, 153, 25, 0, 0, 204, 204, 255, 255, 153, 25, 232, 162, 204, 204, 255, 255, 0, 0, 0, 0, 204, 204, 255, 255, 204, 12, 232, 162, 204, 204, 255, 255, 0, 0, 115, 209, 204, 204, 255, 255, 204, 12, 115, 209, 204, 204, 255, 255, 204, 204, 232, 162, 101, 230, 255, 191, 50, 51, 232, 162, 101, 230, 255, 191, 204, 204, 232, 162, 50, 243, 255, 159, 50, 51, 232, 162, 50, 243, 255, 159, 153, 25, 0, 0, 50, 51, 0, 128, 0, 0, 0, 0, 50, 51, 0, 128, 153, 25, 232, 162, 50, 51, 0, 128, 204, 12, 232, 162, 50, 51, 0, 128, 0, 0, 115, 209, 50, 51, 0, 128, 204, 12, 115, 209, 50, 51, 0, 128, 204, 204, 232, 162, 50, 243, 255, 159, 50, 51, 232, 162, 50, 243, 255, 159, 204, 204, 115, 209, 50, 243, 0, 128, 50, 51, 115, 209, 50, 243, 0, 128, 204, 204, 115, 209, 50, 243, 255, 191, 50, 51, 115, 209, 50, 243, 255, 191, 204, 204, 115, 209, 255, 255, 255, 191, 50, 51, 115, 209, 255, 255, 255, 191, 204, 204, 0, 0, 101, 230, 255, 191, 204, 204, 232, 162, 101, 230, 255, 191, 204, 204, 0, 0, 255, 255, 255, 191, 204, 204, 232, 162, 50, 243, 255, 191, 204, 204, 115, 209, 255, 255, 255, 191, 204, 204, 115, 209, 50, 243, 255, 191, 255, 255, 0, 0, 255, 255, 0, 128, 204, 204, 0, 0, 255, 255, 0, 128, 255, 255, 255, 255, 255, 255, 0, 128, 204, 204, 115, 209, 255, 255, 0, 128, 204, 204, 185, 232, 255, 255, 0, 128, 204, 204, 255, 255, 255, 255, 0, 128, 50, 51, 115, 209, 255, 255, 0, 128, 50, 51, 185, 232, 255, 255, 0, 128, 0, 0, 255, 255, 255, 255, 0, 128, 50, 51, 255, 255, 255, 255, 0, 128, 0, 0, 0, 0, 255, 255, 0, 128, 50, 51, 0, 0, 255, 255, 0, 128, 50, 51, 115, 209, 50, 243, 255, 191, 50, 51, 232, 162, 50, 243, 255, 191, 50, 51, 115, 209, 255, 255, 255, 191, 50, 51, 0, 0, 255, 255, 255, 191, 50, 51, 0, 0, 101, 230, 255, 191, 50, 51, 232, 162, 101, 230, 255, 191, 255, 255, 115, 209, 204, 204, 255, 191, 255, 255, 115, 209, 50, 51, 255, 191, 50, 243, 115, 209, 204, 204, 255, 191, 50, 243, 115, 209, 50, 51, 255, 191, 50, 243, 232, 162, 204, 204, 252, 197, 50, 243, 232, 162, 50, 51, 252, 197, 101, 230, 232, 162, 204, 204, 255, 191, 101, 230, 232, 162, 50, 51, 255, 191, 50, 243, 115, 209, 50, 51, 255, 191, 50, 243, 232, 162, 50, 51, 252, 197, 50, 243, 115, 209, 204, 204, 255, 191, 50, 243, 232, 162, 204, 204, 252, 197, 255, 255, 255, 255, 204, 204, 255, 191, 255, 255, 185, 232, 204, 204, 255, 191, 255, 255, 255, 255, 255, 255, 255, 191, 255, 255, 0, 0, 255, 255, 255, 191, 255, 255, 0, 0, 204, 204, 255, 191, 255, 255, 115, 209, 204, 204, 255, 191, 255, 255, 185, 232, 50, 51, 255, 191, 255, 255, 115, 209, 50, 51, 255, 191, 255, 255, 255, 255, 50, 51, 255, 191, 255, 255, 0, 0, 0, 0, 255, 191, 255, 255, 0, 0, 50, 51, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 101, 230, 0, 0, 204, 204, 255, 255, 255, 255, 0, 0, 204, 204, 255, 255, 101, 230, 232, 162, 204, 204, 255, 255, 50, 243, 232, 162, 204, 204, 255, 255, 255, 255, 115, 209, 204, 204, 255, 255, 50, 243, 115, 209, 204, 204, 255, 255, 101, 230, 0, 0, 50, 51, 0, 128, 101, 230, 232, 162, 50, 51, 0, 128, 255, 255, 0, 0, 50, 51, 0, 128, 50, 243, 232, 162, 50, 51, 0, 128, 255, 255, 115, 209, 50, 51, 0, 128, 50, 243, 115, 209, 50, 51, 0, 128, 50, 51, 232, 162, 204, 12, 255, 255, 204, 204, 232, 162, 204, 12, 255, 255, 50, 51, 115, 209, 204, 12, 255, 255, 204, 204, 115, 209, 204, 12, 255, 255, 204, 204, 115, 209, 204, 12, 255, 191, 204, 204, 115, 209, 0, 0, 255, 191, 50, 51, 115, 209, 204, 12, 255, 191, 50, 51, 115, 209, 0, 0, 255, 191, 204, 204, 0, 0, 0, 0, 255, 191, 204, 204, 115, 209, 0, 0, 255, 191, 204, 204, 0, 0, 153, 25, 255, 191, 204, 204, 232, 162, 204, 12, 255, 191, 204, 204, 232, 162, 153, 25, 255, 191, 204, 204, 115, 209, 204, 12, 255, 191, 50, 51, 115, 209, 0, 0, 255, 191, 50, 51, 0, 0, 0, 0, 255, 191, 50, 51, 115, 209, 204, 12, 255, 191, 50, 51, 232, 162, 204, 12, 255, 191, 50, 51, 0, 0, 153, 25, 255, 191, 50, 51, 232, 162, 153, 25, 255, 191, 0, 0, 0, 0, 0, 0, 255, 255, 50, 51, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 50, 51, 115, 209, 0, 0, 255, 255, 50, 51, 185, 232, 0, 0, 255, 255, 50, 51, 255, 255, 0, 0, 255, 255, 204, 204, 115, 209, 0, 0, 255, 255, 204, 204, 185, 232, 0, 0, 255, 255, 255, 255, 255, 255, 0, 0, 255, 255, 204, 204, 255, 255, 0, 0, 255, 255, 204, 204, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 204, 204, 185, 232, 0, 0, 255, 255, 204, 204, 185, 232, 50, 51, 255, 255, 50, 51, 185, 232, 0, 0, 255, 255, 50, 51, 185, 232, 50, 51, 255, 255, 0, 0, 185, 232, 50, 51, 255, 255, 0, 0, 185, 232, 204, 204, 255, 255, 50, 51, 185, 232, 204, 204, 255, 255, 50, 51, 185, 232, 255, 255, 255, 255, 204, 204, 185, 232, 255, 255, 255, 255, 204, 204, 185, 232, 204, 204, 255, 255, 255, 255, 185, 232, 50, 51, 255, 255, 255, 255, 185, 232, 204, 204, 255, 255, 204, 204, 115, 209, 50, 51, 255, 159, 204, 204, 185, 232, 50, 51, 255, 159, 204, 204, 115, 209, 204, 204, 255, 223, 204, 204, 185, 232, 204, 204, 255, 223, 204, 204, 115, 209, 50, 51, 255, 159, 50, 51, 115, 209, 50, 51, 255, 159, 204, 204, 185, 232, 50, 51, 255, 159, 50, 51, 185, 232, 50, 51, 255, 159, 50, 51, 185, 232, 50, 51, 255, 159, 50, 51, 115, 209, 50, 51, 255, 159, 50, 51, 185, 232, 204, 204, 255, 223, 50, 51, 115, 209, 204, 204, 255, 223, 50, 51, 115, 209, 204, 204, 255, 223, 204, 204, 115, 209, 204, 204, 255, 223, 50, 51, 185, 232, 204, 204, 255, 223, 204, 204, 185, 232, 204, 204, 255, 223, 255, 255, 255, 255, 204, 204, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 204, 204, 255, 255, 204, 204, 255, 255, 204, 204, 255, 255, 255, 255, 255, 255, 204, 204, 185, 232, 204, 204, 255, 255, 255, 255, 185, 232, 204, 204, 255, 255, 204, 204, 255, 255, 204, 204, 255, 255, 255, 255, 255, 255, 204, 204, 255, 255, 204, 204, 185, 232, 204, 204, 255, 191, 204, 204, 255, 255, 204, 204, 255, 191, 204, 204, 185, 232, 255, 255, 255, 191, 204, 204, 255, 255, 255, 255, 255, 191, 50, 51, 255, 255, 204, 204, 255, 255, 50, 51, 255, 255, 255, 255, 255, 255, 0, 0, 255, 255, 204, 204, 255, 255, 0, 0, 255, 255, 255, 255, 255, 255, 50, 51, 255, 255, 204, 204, 255, 191, 50, 51, 185, 232, 204, 204, 255, 191, 50, 51, 255, 255, 255, 255, 255, 191, 50, 51, 185, 232, 255, 255, 255, 191, 0, 0, 185, 232, 204, 204, 255, 255, 50, 51, 185, 232, 204, 204, 255, 255, 0, 0, 255, 255, 204, 204, 255, 255, 50, 51, 255, 255, 204, 204, 255, 255, 50, 51, 255, 255, 0, 0, 255, 255, 50, 51, 255, 255, 50, 51, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 50, 51, 255, 255, 50, 51, 185, 232, 50, 51, 0, 128, 0, 0, 185, 232, 50, 51, 0, 128, 50, 51, 255, 255, 50, 51, 0, 128, 0, 0, 255, 255, 50, 51, 0, 128, 50, 51, 255, 255, 0, 0, 255, 191, 50, 51, 185, 232, 0, 0, 255, 191, 50, 51, 255, 255, 50, 51, 255, 191, 50, 51, 185, 232, 50, 51, 255, 191, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 255, 255, 50, 51, 255, 255, 204, 204, 255, 255, 0, 0, 255, 255, 204, 204, 255, 255, 50, 51, 255, 255, 204, 204, 185, 232, 0, 0, 255, 191, 204, 204, 255, 255, 0, 0, 255, 191, 204, 204, 185, 232, 50, 51, 255, 191, 204, 204, 255, 255, 50, 51, 255, 191, 255, 255, 185, 232, 50, 51, 0, 128, 204, 204, 185, 232, 50, 51, 0, 128, 255, 255, 255, 255, 50, 51, 0, 128, 204, 204, 255, 255, 50, 51, 0, 128, 0, 0, 0, 0, 204, 204, 255, 191, 0, 0, 115, 209, 204, 204, 255, 191, 0, 0, 0, 0, 255, 255, 255, 191, 0, 0, 185, 232, 204, 204, 255, 191, 0, 0, 115, 209, 50, 51, 255, 191, 0, 0, 255, 255, 204, 204, 255, 191, 0, 0, 255, 255, 255, 255, 255, 191, 0, 0, 185, 232, 50, 51, 255, 191, 0, 0, 0, 0, 50, 51, 255, 191, 0, 0, 255, 255, 0, 0, 255, 191, 0, 0, 255, 255, 50, 51, 255, 191, 0, 0, 0, 0, 0, 0, 255, 191, 204, 12, 115, 209, 204, 204, 255, 191, 204, 12, 115, 209, 50, 51, 255, 191, 0, 0, 115, 209, 204, 204, 255, 191, 0, 0, 115, 209, 50, 51, 255, 191, 153, 25, 0, 0, 204, 204, 255, 255, 0, 0, 0, 0, 204, 204, 255, 255, 153, 25, 0, 0, 50, 51, 255, 255, 0, 0, 0, 0, 50, 51, 255, 255, 204, 204, 0, 0, 153, 25, 255, 255, 50, 51, 0, 0, 153, 25, 255, 255, 204, 204, 0, 0, 0, 0, 255, 255, 50, 51, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 204, 204, 255, 255, 101, 230, 0, 0, 204, 204, 255, 255, 255, 255, 0, 0, 50, 51, 255, 255, 101, 230, 0, 0, 50, 51, 255, 255, 204, 204, 0, 0, 101, 230, 255, 255, 204, 204, 0, 0, 255, 255, 255, 255, 50, 51, 0, 0, 101, 230, 255, 255, 50, 51, 0, 0, 255, 255, 255, 255, 204, 76, 232, 162, 50, 243, 255, 255, 153, 89, 232, 162, 255, 255, 255, 255, 50, 179, 232, 162, 50, 243, 255, 255, 101, 166, 232, 162, 255, 255, 255, 255, 153, 89, 115, 209, 255, 255, 255, 143, 153, 89, 232, 162, 255, 255, 255, 143, 204, 76, 115, 209, 50, 243, 255, 159, 204, 76, 232, 162, 50, 243, 255, 159, 101, 166, 232, 162, 255, 255, 255, 143, 153, 89, 232, 162, 255, 255, 255, 143, 101, 166, 115, 209, 255, 255, 255, 143, 153, 89, 115, 209, 255, 255, 255, 143, 50, 179, 232, 162, 50, 243, 255, 159, 101, 166, 232, 162, 255, 255, 255, 143, 50, 179, 115, 209, 50, 243, 255, 159, 101, 166, 115, 209, 255, 255, 255, 143, 204, 12, 232, 162, 204, 76, 84, 213, 0, 0, 232, 162, 153, 89, 84, 213, 204, 12, 232, 162, 50, 179, 84, 213, 0, 0, 232, 162, 101, 166, 84, 213, 0, 0, 115, 209, 153, 89, 255, 207, 0, 0, 232, 162, 153, 89, 255, 207, 204, 12, 115, 209, 204, 76, 255, 223, 204, 12, 232, 162, 204, 76, 255, 223, 0, 0, 232, 162, 101, 166, 255, 175, 0, 0, 232, 162, 153, 89, 255, 207, 0, 0, 115, 209, 101, 166, 255, 175, 0, 0, 115, 209, 153, 89, 255, 207, 204, 12, 232, 162, 50, 179, 255, 159, 0, 0, 232, 162, 101, 166, 255, 175, 204, 12, 115, 209, 50, 179, 255, 159, 0, 0, 115, 209, 101, 166, 255, 175, 50, 179, 232, 162, 204, 12, 255, 191, 101, 166, 232, 162, 0, 0, 255, 191, 204, 76, 232, 162, 204, 12, 255, 191, 153, 89, 232, 162, 0, 0, 255, 191, 101, 166, 115, 209, 0, 0, 255, 239, 101, 166, 232, 162, 0, 0, 255, 239, 50, 179, 115, 209, 204, 12, 255, 223, 50, 179, 232, 162, 204, 12, 255, 223, 153, 89, 232, 162, 0, 0, 255, 239, 101, 166, 232, 162, 0, 0, 255, 239, 153, 89, 115, 209, 0, 0, 255, 239, 101, 166, 115, 209, 0, 0, 255, 239, 204, 76, 232, 162, 204, 12, 255, 223, 153, 89, 232, 162, 0, 0, 255, 239, 204, 76, 115, 209, 204, 12, 255, 223, 153, 89, 115, 209, 0, 0, 255, 239, 50, 243, 232, 162, 50, 179, 84, 213, 255, 255, 232, 162, 101, 166, 84, 213, 50, 243, 232, 162, 204, 76, 84, 213, 255, 255, 232, 162, 153, 89, 84, 213, 255, 255, 115, 209, 101, 166, 255, 175, 255, 255, 232, 162, 101, 166, 255, 175, 50, 243, 115, 209, 50, 179, 255, 159, 50, 243, 232, 162, 50, 179, 255, 159, 255, 255, 232, 162, 153, 89, 255, 207, 255, 255, 232, 162, 101, 166, 255, 175, 255, 255, 115, 209, 153, 89, 255, 207, 255, 255, 115, 209, 101, 166, 255, 175, 50, 243, 232, 162, 204, 76, 255, 223, 255, 255, 232, 162, 153, 89, 255, 207, 50, 243, 115, 209, 204, 76, 255, 223, 255, 255, 115, 209, 153, 89, 255, 207, 50, 51, 0, 0, 153, 25, 255, 255, 204, 204, 0, 0, 153, 25, 255, 255, 50, 51, 232, 162, 153, 25, 255, 255, 204, 204, 232, 162, 153, 25, 255, 255, 204, 204, 0, 0, 101, 230, 0, 128, 50, 51, 0, 0, 101, 230, 0, 128, 204, 204, 232, 162, 101, 230, 0, 128, 50, 51, 232, 162, 101, 230, 0, 128, 153, 25, 0, 0, 50, 51, 255, 191, 153, 25, 232, 162, 50, 51, 255, 191, 153, 25, 0, 0, 204, 204, 255, 191, 153, 25, 232, 162, 204, 204, 255, 191, 101, 230, 232, 162, 50, 51, 255, 191, 101, 230, 0, 0, 50, 51, 255, 191, 101, 230, 232, 162, 204, 204, 255, 191, 101, 230, 0, 0, 204, 204, 255, 191, 204, 204, 115, 209, 204, 204, 255, 255, 50, 51, 115, 209, 204, 204, 255, 255, 204, 204, 115, 209, 50, 51, 255, 255, 50, 51, 115, 209, 50, 51, 255, 255, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 254, 57, 254, 156, 254, 57, 254, 156, 1, 70, 255, 226, 255, 127, 255, 255, 1, 70, 255, 226, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 0, 0, 255, 127, 0, 0, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 28, 1, 70, 255, 28, 1, 70, 0, 0, 255, 127, 0, 0, 255, 127, 255, 127, 0, 0, 0, 99, 254, 57, 255, 127, 0, 0, 0, 99, 254, 57, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 124, 165, 255, 255, 124, 165, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 63, 255, 127, 255, 63, 255, 127, 255, 63, 255, 127, 255, 63, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 85, 85, 84, 85, 85, 85, 84, 85, 85, 85, 84, 85, 85, 85, 84, 85, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 170, 42, 84, 213, 170, 42, 84, 213, 170, 42, 84, 213, 170, 42, 84, 213, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_waykc")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_7xrgu"]
+points = PackedVector3Array(-0.5, 0, -0.5, 0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, 1.1, -0.5, 0.5, 0, 0.5, 0.5, 1.1, -0.5, -0.5, 1.1, 0.5, 0.5, 1.1, 0.5)
 
 [node name="Tiles" type="Node3D"]
 
-[node name="arrow" parent="." instance=ExtResource("1_dxyjx")]
+[node name="banner2" parent="." instance=ExtResource("1_8yw1x")]
+visible = false
 
-[node name="arrows" parent="." instance=ExtResource("2_0rntk")]
+[node name="barrel2" parent="." instance=ExtResource("2_adg57")]
+visible = false
 
-[node name="barrel" parent="." instance=ExtResource("3_sac7x")]
+[node name="character-human2" parent="." instance=ExtResource("3_usfmr")]
+visible = false
 
-[node name="block" parent="." instance=ExtResource("4_qwp4w")]
+[node name="character-orc2" parent="." instance=ExtResource("4_qe0lh")]
+visible = false
 
-[node name="blockCliff" parent="." instance=ExtResource("5_3wlo4")]
+[node name="chest2" parent="." instance=ExtResource("5_r3t36")]
+visible = false
 
-[node name="blockCliffCorner" parent="." instance=ExtResource("6_ltwgm")]
+[node name="coin2" parent="." instance=ExtResource("6_r8kbf")]
+visible = false
 
-[node name="blockCornerLarge" parent="." instance=ExtResource("7_vet8u")]
+[node name="column2" parent="." instance=ExtResource("7_kjkm6")]
+visible = false
 
-[node name="blockCornerSmall" parent="." instance=ExtResource("8_bv1lo")]
+[node name="dirt2" parent="." instance=ExtResource("8_572mx")]
+visible = false
 
-[node name="blockCurve" parent="." instance=ExtResource("9_gdrqp")]
+[node name="floor-detail2" parent="." instance=ExtResource("9_gfjuk")]
+visible = false
 
-[node name="blockCurveHalf" parent="." instance=ExtResource("10_sxt8k")]
+[node name="floor2" type="Node3D" parent="."]
+visible = false
 
-[node name="blockCurveLow" parent="." instance=ExtResource("11_yovog")]
+[node name="floor" type="MeshInstance3D" parent="floor2"]
+mesh = SubResource("ArrayMesh_o21y4")
+skeleton = NodePath("")
 
-[node name="blockDirt" parent="." instance=ExtResource("12_2qnir")]
+[node name="StaticBody3D" type="StaticBody3D" parent="floor2/floor"]
 
-[node name="blockDirtHalf" parent="." instance=ExtResource("13_ysjgn")]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor2/floor/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_oyx7t")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="blockDirtHalf"]
-shape = SubResource("BoxShape3D_iucvt")
+[node name="gate2" parent="." instance=ExtResource("11_bhq6p")]
+visible = false
 
-[node name="blockDirtRamp" parent="." instance=ExtResource("14_0xiqm")]
+[node name="rocks2" parent="." instance=ExtResource("12_n8p1v")]
+visible = false
 
-[node name="blockDirtRampHalf" parent="." instance=ExtResource("15_2yxwm")]
+[node name="stairs2" parent="." instance=ExtResource("13_ndtf7")]
+visible = false
 
-[node name="blockEnd" parent="." instance=ExtResource("16_vej6d")]
+[node name="stones2" parent="." instance=ExtResource("14_cimvt")]
+visible = false
 
-[node name="blockHalf" parent="." instance=ExtResource("17_s2ova")]
+[node name="trap2" parent="." instance=ExtResource("15_83brc")]
+visible = false
 
-[node name="blockHexagon" parent="." instance=ExtResource("18_poius")]
+[node name="wall-half2" parent="." instance=ExtResource("16_kwedr")]
+visible = false
 
-[node name="blockHexagonLow" parent="." instance=ExtResource("19_rsncl")]
+[node name="wall-narrow2" parent="." instance=ExtResource("17_ccupp")]
+visible = false
 
-[node name="blockLarge" parent="." instance=ExtResource("20_iu84s")]
+[node name="wall-opening2" parent="." instance=ExtResource("18_3gouw")]
+visible = false
 
-[node name="blockLevel" parent="." instance=ExtResource("21_oupno")]
+[node name="wall2" type="Node3D" parent="."]
 
-[node name="blockLong" parent="." instance=ExtResource("22_y14no")]
+[node name="wall" type="MeshInstance3D" parent="wall2"]
+mesh = SubResource("ArrayMesh_ycvfe")
+skeleton = NodePath("")
 
-[node name="blockMoving" parent="." instance=ExtResource("23_1dff2")]
+[node name="StaticBody3D" type="StaticBody3D" parent="wall2/wall"]
 
-[node name="blockMovingBlue" parent="." instance=ExtResource("24_3ylhb")]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall2/wall/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_7xrgu")
 
-[node name="blockMovingLarge" parent="." instance=ExtResource("25_o87vh")]
+[node name="wood-structure2" parent="." instance=ExtResource("20_0ncqh")]
+visible = false
 
-[node name="blockQuarter" parent="." instance=ExtResource("26_wsynh")]
-
-[node name="blockRounded" parent="." instance=ExtResource("27_4od02")]
-
-[node name="blockRoundedLarge" parent="." instance=ExtResource("28_in0hi")]
-
-[node name="blockRoundedLong" parent="." instance=ExtResource("29_es3kt")]
-
-[node name="blockRoundedLow" parent="." instance=ExtResource("30_um05a")]
-
-[node name="blockRoundedLowLong" parent="." instance=ExtResource("31_1c6wd")]
-
-[node name="blockSlope" parent="." instance=ExtResource("32_5u25q")]
-
-[node name="blockSlopeHalf" parent="." instance=ExtResource("33_gg3ck")]
-
-[node name="blockSnow" parent="." instance=ExtResource("34_ts535")]
-
-[node name="blockSnowCliff" parent="." instance=ExtResource("35_7mvn5")]
-
-[node name="blockSnowCliffCorner" parent="." instance=ExtResource("36_tu6po")]
-
-[node name="blockSnowCornerLarge" parent="." instance=ExtResource("37_i8p2f")]
-
-[node name="blockSnowCornerSmall" parent="." instance=ExtResource("38_udjar")]
-
-[node name="blockSnowCurve" parent="." instance=ExtResource("39_gi5rc")]
-
-[node name="blockSnowCurveHalf" parent="." instance=ExtResource("40_ibqit")]
-
-[node name="blockSnowCurveLow" parent="." instance=ExtResource("41_ety07")]
-
-[node name="blockSnowEnd" parent="." instance=ExtResource("42_femgj")]
-
-[node name="blockSnowHalf" parent="." instance=ExtResource("43_xxi8x")]
-
-[node name="blockSnowHexagon" parent="." instance=ExtResource("44_dbem6")]
-
-[node name="blockSnowHexagonLow" parent="." instance=ExtResource("45_qpin3")]
-
-[node name="blockSnowLarge" parent="." instance=ExtResource("46_3o7d0")]
-
-[node name="blockSnowLevel" parent="." instance=ExtResource("47_6uxxu")]
-
-[node name="blockSnowLong" parent="." instance=ExtResource("48_4e0iy")]
-
-[node name="blockSnowQuarter" parent="." instance=ExtResource("49_da1lg")]
-
-[node name="blockSnowRounded" parent="." instance=ExtResource("50_gvy6l")]
-
-[node name="blockSnowRoundedLarge" parent="." instance=ExtResource("51_wsiks")]
-
-[node name="blockSnowRoundedLong" parent="." instance=ExtResource("52_efks1")]
-
-[node name="blockSnowRoundedLow" parent="." instance=ExtResource("53_20ca3")]
-
-[node name="blockSnowRoundedLowLong" parent="." instance=ExtResource("54_8xh1r")]
-
-[node name="blockSnowSlope" parent="." instance=ExtResource("55_b83hq")]
-
-[node name="blockSnowSlopeHalf" parent="." instance=ExtResource("56_fsn0i")]
-
-[node name="bomb" parent="." instance=ExtResource("57_jxigq")]
-
-[node name="bridge" parent="." instance=ExtResource("58_8jnms")]
-
-[node name="bridgeHalf" parent="." instance=ExtResource("59_qu3nd")]
-
-[node name="bridgeRamp" parent="." instance=ExtResource("60_2jdmq")]
-
-[node name="buttonRound" parent="." instance=ExtResource("61_qp5i4")]
-
-[node name="buttonSquare" parent="." instance=ExtResource("62_w1b2j")]
-
-[node name="chest" parent="." instance=ExtResource("63_2t2s7")]
-
-[node name="coinBronze" parent="." instance=ExtResource("64_0fjik")]
-
-[node name="coinGold" parent="." instance=ExtResource("65_atx4c")]
-
-[node name="coinSilver" parent="." instance=ExtResource("66_i0mr0")]
-
-[node name="crate" parent="." instance=ExtResource("67_slltt")]
-
-[node name="crateItem" parent="." instance=ExtResource("68_p1bt0")]
-
-[node name="crateItemStrong" parent="." instance=ExtResource("69_cywpx")]
-
-[node name="crateStrong" parent="." instance=ExtResource("70_fws3m")]
-
-[node name="doorClosed" parent="." instance=ExtResource("71_sfptk")]
-
-[node name="doorLargeClosed" parent="." instance=ExtResource("72_bauta")]
-
-[node name="doorLargeOpen" parent="." instance=ExtResource("73_rckp5")]
-
-[node name="doorOpen" parent="." instance=ExtResource("74_4mv5p")]
-
-[node name="fence" parent="." instance=ExtResource("75_4eoyu")]
-
-[node name="fenceBroken" parent="." instance=ExtResource("76_mtcgm")]
-
-[node name="fenceCorner" parent="." instance=ExtResource("77_iviaw")]
-
-[node name="fenceCornerCurved" parent="." instance=ExtResource("78_cdj71")]
-
-[node name="fenceLow" parent="." instance=ExtResource("79_xaep5")]
-
-[node name="fenceLowBroken" parent="." instance=ExtResource("80_j7fqd")]
-
-[node name="fenceLowCorner" parent="." instance=ExtResource("81_nhu1g")]
-
-[node name="fenceLowCornerCurved" parent="." instance=ExtResource("82_g8xbn")]
-
-[node name="flag" parent="." instance=ExtResource("83_3y3ag")]
-
-[node name="flowers" parent="." instance=ExtResource("84_7thbj")]
-
-[node name="flowersLow" parent="." instance=ExtResource("85_5btux")]
-
-[node name="heart" parent="." instance=ExtResource("86_qkclg")]
-
-[node name="hedge" parent="." instance=ExtResource("87_gkmla")]
-
-[node name="hedgeCorner" parent="." instance=ExtResource("88_fbbgk")]
-
-[node name="jewel" parent="." instance=ExtResource("89_fnarm")]
-
-[node name="key" parent="." instance=ExtResource("90_c2gg6")]
-
-[node name="ladder" parent="." instance=ExtResource("91_p0mia")]
-
-[node name="ladderBroken" parent="." instance=ExtResource("92_fx7sa")]
-
-[node name="ladderLong" parent="." instance=ExtResource("93_t32gt")]
-
-[node name="lever" parent="." instance=ExtResource("94_1gy2d")]
-
-[node name="lock" parent="." instance=ExtResource("95_0fseu")]
-
-[node name="mushrooms" parent="." instance=ExtResource("96_ck4hk")]
-
-[node name="plant" parent="." instance=ExtResource("97_dyv1p")]
-
-[node name="platform" parent="." instance=ExtResource("98_h2rl0")]
-
-[node name="poles" parent="." instance=ExtResource("99_c06nn")]
-
-[node name="rocks" parent="." instance=ExtResource("100_y0r10")]
-
-[node name="saw" parent="." instance=ExtResource("101_gk4d1")]
-
-[node name="sign" parent="." instance=ExtResource("102_y14pr")]
-
-[node name="spikeBlock" parent="." instance=ExtResource("103_n4p7k")]
-
-[node name="spikeBlockWide" parent="." instance=ExtResource("104_mg1qf")]
-
-[node name="spikes" parent="." instance=ExtResource("105_vanar")]
-
-[node name="spikesHidden" parent="." instance=ExtResource("106_75ioh")]
-
-[node name="spikesLarge" parent="." instance=ExtResource("107_yl4q8")]
-
-[node name="stones" parent="." instance=ExtResource("108_cd32x")]
-
-[node name="tree" parent="." instance=ExtResource("109_x8ser")]
-
-[node name="treePine" parent="." instance=ExtResource("110_xf6pc")]
-
-[node name="treePineSmall" parent="." instance=ExtResource("111_fqrj8")]
-
-[node name="treePineSmallSnow" parent="." instance=ExtResource("112_kshgm")]
-
-[node name="treePineSnow" parent="." instance=ExtResource("113_6i1ky")]
-
-[node name="treeSnow" parent="." instance=ExtResource("114_vcuxw")]
+[node name="wood-support2" parent="." instance=ExtResource("21_54i1e")]
+visible = false

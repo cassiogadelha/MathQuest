@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://drdhws5x28ngk"
+path="res://.godot/imported/Roof_Convex_Side_Edge.obj-ac7299a71bf490b2a3cf2d4e79516c2d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Roof_Convex_Side_Edge.obj-ac7299a71bf490b2a3cf2d4e79516c2d.mesh"]
+
+source_file="res://Assets/Modular Village/Roof_Convex_Side_Edge.obj"
+dest_files=["res://.godot/imported/Roof_Convex_Side_Edge.obj-ac7299a71bf490b2a3cf2d4e79516c2d.mesh", "res://.godot/imported/Roof_Convex_Side_Edge.obj-ac7299a71bf490b2a3cf2d4e79516c2d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

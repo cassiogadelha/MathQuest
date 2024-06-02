@@ -26,7 +26,7 @@ func check_attack():
 	if player != null:
 		if escape_attack_range_area.overlaps_body(player):
 			bite.play()
-			player.get_damage()
+			player.get_damage(my_self.stats.damage)
 		else:
 			pass
 			state_transition.emit(self, "EnemyChaseState")

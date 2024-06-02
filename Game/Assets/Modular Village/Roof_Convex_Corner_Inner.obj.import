@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bou7jaoyjwk4u"
+path="res://.godot/imported/Roof_Convex_Corner_Inner.obj-b8cda609dcef7d2d9e75b00aa17ac681.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Roof_Convex_Corner_Inner.obj-b8cda609dcef7d2d9e75b00aa17ac681.mesh"]
+
+source_file="res://Assets/Modular Village/Roof_Convex_Corner_Inner.obj"
+dest_files=["res://.godot/imported/Roof_Convex_Corner_Inner.obj-b8cda609dcef7d2d9e75b00aa17ac681.mesh", "res://.godot/imported/Roof_Convex_Corner_Inner.obj-b8cda609dcef7d2d9e75b00aa17ac681.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
