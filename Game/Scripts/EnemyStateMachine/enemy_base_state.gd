@@ -7,8 +7,7 @@ signal state_transition
 @onready var enemy_movement = $"../../EnemyMovement" as EnemyMovement
 @onready var animation_player = $"../../Visuals/AnimationPlayer" as AnimationPlayer
 @onready var hurt_box = $"../../Combat/HurtBox" as HurtBox
-@onready var my_self = $"../.." as Enemy
-
+@onready var my_self = $"../.." as CharacterBody3D
 
 var initial_position : Vector3
 var returned_from_chase_state: bool = false
@@ -19,6 +18,7 @@ var fsm: EnemyFiniteStateMachine
 
 func _ready():
 	fsm = get_parent()
+	
 	
 	if initial_position == Vector3.ZERO:
 		initial_position = my_self.global_position
@@ -42,4 +42,5 @@ func _on_area_3d_body_entered(_body):
 	state_transition.emit(self, "EnemyChaseState")
 	
 func enter_return_state():
+	print("RETURN!")
 	state_transition.emit(self, "EnemyReturnState")

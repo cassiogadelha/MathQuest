@@ -1,10 +1,10 @@
-[gd_scene load_steps=38 format=3 uid="uid://i01vi67ep1qe"]
+[gd_scene load_steps=33 format=3 uid="uid://i01vi67ep1qe"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_8pm8a"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_idle_state.gd" id="1_15s3t"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_finite_state_machine.gd" id="1_dux51"]
-[ext_resource type="Resource" uid="uid://cn6qfr3glf2ep" path="res://Resources/skull_of_avalon_stats.tres" id="2_2n0dr"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_base_state.gd" id="2_d1u31"]
+[ext_resource type="Resource" uid="uid://bgn8oy75snbuo" path="res://Resources/skull_stats.tres" id="2_owogw"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_movement.gd" id="4_f8qwy"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_move_state.gd" id="4_xmicf"]
 [ext_resource type="Script" path="res://Scripts/hurt_box.gd" id="7_0idqc"]
@@ -12,7 +12,6 @@
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_attack_state.gd" id="8_5dcun"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_return_state.gd" id="9_likt3"]
 [ext_resource type="AudioStream" uid="uid://dtknt8dtr4f3p" path="res://Assets/Sfx/Bite.wav" id="12_i0blc"]
-[ext_resource type="Texture2D" uid="uid://b32rx3a3kxs8e" path="res://Assets/Images/2651350-middle.png" id="13_ky2i5"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_0vl7j"]
 height = 1.5051
@@ -729,84 +728,11 @@ radius = 3.5
 [sub_resource type="SphereShape3D" id="SphereShape3D_ajbki"]
 radius = 6.0
 
-[sub_resource type="FontFile" id="FontFile_d48hi"]
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-cache/0/152/0/ascent = 0.0
-cache/0/152/0/descent = 0.0
-cache/0/152/0/underline_position = 0.0
-cache/0/152/0/underline_thickness = 0.0
-cache/0/152/0/scale = 1.0
-cache/0/152/0/kerning_overrides/152/0 = Vector2(0, 0)
-cache/0/152/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/152/0/kerning_overrides/50/0 = Vector2(0, 0)
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/16/0/kerning_overrides/152/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/16/0/kerning_overrides/50/0 = Vector2(0, 0)
-cache/0/50/0/ascent = 0.0
-cache/0/50/0/descent = 0.0
-cache/0/50/0/underline_position = 0.0
-cache/0/50/0/underline_thickness = 0.0
-cache/0/50/0/scale = 1.0
-cache/0/50/0/kerning_overrides/152/0 = Vector2(0, 0)
-cache/0/50/0/kerning_overrides/16/0 = Vector2(0, 0)
-cache/0/50/0/kerning_overrides/50/0 = Vector2(0, 0)
-
-[sub_resource type="Animation" id="Animation_ebe1p"]
-resource_name = "Idle"
-loop_mode = 1
-tracks/0/type = "position_3d"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array()
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 2.76509, 0), Vector3(0, 2.67, 0), Vector3(0, 2.835, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_6capw"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 2.76509, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_1ftsi"]
-_data = {
-"Idle": SubResource("Animation_ebe1p"),
-"RESET": SubResource("Animation_6capw")
-}
-
 [node name="Skull" type="CharacterBody3D"]
 collision_layer = 16
 collision_mask = 8
 script = ExtResource("1_8pm8a")
-stats = ExtResource("2_2n0dr")
+stats = ExtResource("2_owogw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.732826, 0)
@@ -899,8 +825,6 @@ wait_time = 5.0
 script = ExtResource("4_f8qwy")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
-avoidance_enabled = true
-use_3d_avoidance = true
 
 [node name="Combat" type="Node3D" parent="."]
 
@@ -940,22 +864,8 @@ stream = ExtResource("12_i0blc")
 [node name="Name" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 billboard = 1
-text = "Skull of Avalon"
-font = SubResource("FontFile_d48hi")
-font_size = 50
-outline_size = 50
-
-[node name="SelectionArrow" type="Sprite3D" parent="."]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 2.76509, 0)
-visible = false
-billboard = 2
-texture = ExtResource("13_ky2i5")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="SelectionArrow"]
-libraries = {
-"": SubResource("AnimationLibrary_1ftsi")
-}
-autoplay = "Idle"
+modulate = Color(1, 0, 0, 1)
+text = "SKULL OF AVALON"
 
 [connection signal="timeout" from="FSM/IdleStateTimer" to="FSM/EnemyIdleState" method="_on_idle_state_timer_timeout"]
 [connection signal="timeout" from="FSM/ChaseStateTimer" to="FSM/EnemyChaseState" method="_on_chase_state_timer_timeout"]

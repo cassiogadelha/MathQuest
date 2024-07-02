@@ -1,18 +1,13 @@
 extends CharacterBody3D
 class_name Player
 
-@onready var targets_area = $TargetsArea as TargetArea
-
-@onready var text_damage_point = $TextDamagePoint as Marker3D
-@export var damageText: PackedScene
-
 #@onready var camera_mount = $CameraMount
 @onready var animation_player = $Visuals/Mage/AnimationPlayer
 @onready var visuals = $Visuals
 @onready var spell_shoot = $SpellShoot
 @onready var foot_steps = $FootSteps
 
-#@onready var camera_mount = $"../PhantomCamera3D"
+@onready var camera_mount = $"../PhantomCamera3D"
 @onready var arcane_bolt_spawn_point = $Visuals/ArcaneBoltSpawnPoint
 @onready var movement = $Movement
 
@@ -24,35 +19,21 @@ var direction
 
 var health = 100
 
-var previousSelection: Enemy
-
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED #remove mouse from screen
 	
-func _process(_delta):
-	if Input.is_action_just_pressed("Select"):
-		if previousSelection != null:
-			previousSelection.selection_arrow.visible = false
-			
-		var nearestEnemy: Enemy = targets_area.get_nearest_enemy()
-		
-		if nearestEnemy != null:
-			nearestEnemy.selection_arrow.visible = true
-			previousSelection = nearestEnemy
-	print(text_damage_point.global_position)
-		
 func _input(event):
 	if event is InputEventMouseMotion:
-		rotate_y(deg_to_rad(-event.relative.x * sens_horizontal))
-		visuals.rotate_y(deg_to_rad(event.relative.x * sens_horizontal))
+		#rotate_y(deg_to_rad(-event.relative.x * sens_horizontal))
+		#visuals.rotate_y(deg_to_rad(event.relative.x * sens_horizontal))
 		
-		#camera_mount.rotate_y(deg_to_rad(-event.relative.x * sens_horizontal))
+		camera_mount.rotate_y(deg_to_rad(-event.relative.x * sens_horizontal))
 		
-		#if(camera_mount.rotation.x >= 0.82):
-			#camera_mount.rotation.x = 0.82
+		if(camera_mount.rotation.x >= 0.82):
+			camera_mount.rotation.x = 0.82
 			
-		#if(camera_mount.rotation.x <= -0.25):
-			#camera_mount.rotation.x = -0.25
+		if(camera_mount.rotation.x <= -0.25):
+			camera_mount.rotation.x = -0.25
 	
 func spawn_magic():
 	spell_shoot.play()
@@ -68,15 +49,10 @@ func spawn_magic():
 	
 	instance.linear_velocity = movement.last_direction * 10
 	
-func play_foot_steeps() -> void:
+func play_foot_steeps():
 	foot_steps.play()
 	
-func get_damage(damageAmount: float) -> void:
-	health -= damageAmount
-	
-	instance = damageText.instantiate() as Label3D
-	text_damage_point.add_child(instance)
-	instance.text = str(damageAmount)
-	
+func get_damage():
+	health -= 50
 	if health <= 0:
 		GlobalSignals.player_death.emit()

@@ -33,6 +33,7 @@ func get_random_position() -> Vector3:
 	var x = sin(phi) * cos(theta) * 7
 	var y = my_self.position.y
 	var z = cos(phi) * 7
+	print(x, "   ", y, "    ", z)
 	
 	return Vector3(x, y, z)
 	
