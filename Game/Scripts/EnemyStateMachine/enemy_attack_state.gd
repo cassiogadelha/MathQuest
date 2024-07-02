@@ -4,29 +4,29 @@ class_name EnemyAttackState
 @onready var bite = $"../../Bite" as AudioStreamPlayer3D
 @onready var escape_attack_range_area = $"../../Combat/EscapeAttackRange" as Area3D
 
-func Enter():
-	super.Enter()
-	
-	animation_player["speed_scale"] = 0.5
-	enemy_movement.stop()
-	animation_player.play("Bite_Front")
-	
-func Exit():
-	super.Exit()
-	
-	animation_player["speed_scale"] = 1
-	
-func Update(_delta):
-	if player != null:
-		if !escape_attack_range_area.overlaps_body(player):
-			pass
-			state_transition.emit(self, "EnemyChaseState")
-	
 func check_attack():
 	if player != null:
 		if escape_attack_range_area.overlaps_body(player):
 			bite.play()
 			player.get_damage()
 		else:
-			pass
-			state_transition.emit(self, "EnemyChaseState")
+			state_chart.send_event("chase")
+
+
+func _on_attack_state_entered():
+	super.Enter()
+	
+	animation_player["speed_scale"] = 0.5
+	enemy_movement.stop()
+
+
+func _on_attack_state_processing(delta):
+	if player != null:
+		if !escape_attack_range_area.overlaps_body(player):
+			state_chart.send_event("chase")
+			
+
+func _on_attack_state_exited():
+	super.Exit()
+	
+	animation_player["speed_scale"] = 1

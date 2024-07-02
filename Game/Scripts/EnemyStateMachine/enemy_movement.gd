@@ -24,8 +24,11 @@ func stop():
 	if enemy != null:
 		enemy.velocity = Vector3.ZERO
 
-func move(direction: Vector3, _delta, distance_to_target: float):
-	speed = MOVE_SPEED
+func move(direction: Vector3, _delta, distance_to_target: float, returning: bool):
+	if returning:
+		speed = MOVE_SPEED * 2
+	else:
+		speed = MOVE_SPEED
 	#direction = (enemy.transform.basis * Vector3(random_axis.x, 0, random_axis.y)).normalized()
 	enemy.velocity = enemy.velocity.lerp(direction * speed * 1.5, ACCEL * _delta)
 	

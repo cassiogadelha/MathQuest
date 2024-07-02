@@ -1,17 +1,22 @@
-[gd_scene load_steps=33 format=3 uid="uid://i01vi67ep1qe"]
+[gd_scene load_steps=38 format=3 uid="uid://i01vi67ep1qe"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_8pm8a"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_idle_state.gd" id="1_15s3t"]
-[ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_finite_state_machine.gd" id="1_dux51"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_base_state.gd" id="2_d1u31"]
 [ext_resource type="Resource" uid="uid://bgn8oy75snbuo" path="res://Resources/skull_stats.tres" id="2_owogw"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_movement.gd" id="4_f8qwy"]
-[ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_move_state.gd" id="4_xmicf"]
+[ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_patrol_state.gd" id="4_xmicf"]
 [ext_resource type="Script" path="res://Scripts/hurt_box.gd" id="7_0idqc"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/animation_player_state.gd" id="7_2q8mr"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="7_aphr8"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_chase_state.gd" id="7_muq2i"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_attack_state.gd" id="8_5dcun"]
 [ext_resource type="Script" path="res://Scripts/EnemyStateMachine/enemy_return_state.gd" id="9_likt3"]
 [ext_resource type="AudioStream" uid="uid://dtknt8dtr4f3p" path="res://Assets/Sfx/Bite.wav" id="12_i0blc"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="13_uwi7r"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/parallel_state.gd" id="14_eh0gb"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="15_a1u4e"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="16_24xkw"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_0vl7j"]
 height = 1.5051
@@ -84,81 +89,6 @@ bind/3/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.989457, 0)
 bind/4/name = &"Head3"
 bind/4/bone = -1
 bind/4/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37953, 0)
-
-[sub_resource type="Animation" id="Animation_k7o77"]
-resource_name = "Bite_Front"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "position_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("MonsterArmature/Skeleton3D:Mouth")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, -7.80307e-18, 0.147259, 0.500829, 0.0333333, 1, -7.80307e-18, 0.148793, 0.503429, 0.0666667, 1, -7.80307e-18, 0.153025, 0.5106, 0.1, 1, -7.80307e-18, 0.160507, 0.523281, 0.133333, 1, -7.80307e-18, 0.171982, 0.542726, 0.166667, 1, -7.80307e-18, 0.188375, 0.570507, 0.2, 1, -7.80307e-18, 0.214907, 0.615471, 0.233333, 1, -7.80307e-18, 0.255719, 0.684635, 0.266667, 1, 2.89384e-17, 0.315351, 0.785692, 0.3, 1, 8.40504e-17, 0.370619, 0.879355, 0.333333, 1, 8.40504e-17, 0.370619, 0.879355, 0.366667, 1, 8.40504e-17, 0.257601, 0.687825, 0.4, 1, 8.40504e-17, 0.197245, 0.58554, 0.433333, 1, 8.40504e-17, 0.166825, 0.533987, 0.466667, 1, 6.56797e-17, 0.152089, 0.509015, 0.5, 1, -7.80307e-18, 0.147259, 0.500829)
-tracks/1/type = "rotation_3d"
-tracks/1/imported = true
-tracks/1/enabled = true
-tracks/1/path = NodePath("MonsterArmature/Skeleton3D:Mouth")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
-tracks/2/type = "position_3d"
-tracks/2/imported = true
-tracks/2/enabled = true
-tracks/2/path = NodePath("MonsterArmature/Skeleton3D:Head")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = PackedFloat32Array(0, 1, 0, 0.483194, 0, 0.0333333, 1, 0, 0.486733, -0.00313376, 0.0666667, 1, 0, 0.49909, -0.0139727, 0.1, 1, 7.80755e-18, 0.532482, -0.0413628, 0.133333, 1, 1.95189e-17, 0.576148, -0.0593785, 0.166667, 1, 1.95189e-17, 0.596346, -0.00732258, 0.233333, 1, 1.95189e-17, 0.631345, 0.265006, 0.266667, 1, 2.59486e-17, 0.640272, 0.359117, 0.3, 1, 3.55932e-17, 0.643491, 0.398159, 0.333333, 1, 3.55932e-17, 0.643491, 0.398159, 0.366667, 1, 3.55932e-17, 0.570606, 0.217122, 0.4, 1, 3.55932e-17, 0.52506, 0.10399, 0.433333, 1, 3.55932e-17, 0.499357, 0.0401476, 0.466667, 1, 2.84746e-17, 0.487141, 0.00980501, 0.5, 1, 0, 0.483194, 0)
-tracks/3/type = "rotation_3d"
-tracks/3/imported = true
-tracks/3/enabled = true
-tracks/3/path = NodePath("MonsterArmature/Skeleton3D:Head")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, -0.00847464, 0, 0, 0.999964, 0.0666667, 1, -0.0378944, 0, 0, 0.999282, 0.1, 1, -0.112167, -1.69163e-25, 1.74189e-17, 0.993689, 0.133333, 1, -0.189187, -5.05132e-25, 4.34593e-17, 0.981941, 0.166667, 1, -0.163552, -8.38471e-25, 4.35717e-17, 0.986535, 0.233333, 1, -0.0269367, -4.63765e-25, 4.36748e-17, 0.999637, 0.266667, 1, 0.020418, 7.00664e-26, 2.25979e-17, 0.999792, 0.3, 1, 0.0399414, 8.14906e-25, -8.86876e-18, 0.999202, 0.333333, 1, 0.0399414, 8.14906e-25, -8.86876e-18, 0.999202, 0.366667, 1, 0.0217844, 8.24858e-25, -8.87052e-18, 0.999763, 0.4, 1, 0.0104337, 8.27251e-25, -8.87013e-18, 0.999946, 0.433333, 1, 0.00402779, 8.26707e-25, -8.86941e-18, 0.999992, 0.466667, 1, 0.000983614, 6.60776e-25, -7.09518e-18, 1, 0.5, 1, 0, 0, 0, 1)
-tracks/4/type = "rotation_3d"
-tracks/4/imported = true
-tracks/4/enabled = true
-tracks/4/path = NodePath("MonsterArmature/Skeleton3D:Head3")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = PackedFloat32Array(0, 1, 0, 3.54715e-10, -0.00264005, 0.999997, 0.0333333, 1, 0, 3.55441e-10, -0.00368595, 0.999993, 0.166667, 1, -7.45059e-09, 3.81082e-10, -0.00179455, 0.999998, 0.2, 1, -1.49012e-09, 3.57801e-10, -0.00247095, 0.999997, 0.233333, 1, 0.00506175, 1.03734e-05, -0.0034763, 0.999981, 0.266667, 1, 0.0233483, 4.78482e-05, -0.00419572, 0.999719, 0.3, 1, 0.0629298, 0.000128962, -0.0039579, 0.99801, 0.333333, 1, 0.131587, 0.000269662, -0.00203148, 0.991302, 0.366667, 1, 0.0845782, 0.000173327, -0.000752663, 0.996417, 0.4, 1, 0.0438286, 8.98184e-05, -0.000285849, 0.999039, 0.433333, 1, 0.0167006, 3.4225e-05, -0.000568525, 0.99986, 0.466667, 1, 0.00400292, 8.20355e-06, -0.00143954, 0.999991, 0.5, 1, 0, 3.54715e-10, -0.00264005, 0.999997)
-tracks/5/type = "position_3d"
-tracks/5/imported = true
-tracks/5/enabled = true
-tracks/5/path = NodePath("MonsterArmature/Skeleton3D:Body")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0)
-tracks/6/type = "rotation_3d"
-tracks/6/imported = true
-tracks/6/enabled = true
-tracks/6/path = NodePath("MonsterArmature/Skeleton3D:Body")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
-tracks/7/type = "rotation_3d"
-tracks/7/imported = true
-tracks/7/enabled = true
-tracks/7/path = NodePath("MonsterArmature/Skeleton3D:Head2")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
-tracks/8/type = "method"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("../../FSM/EnemyAttackState")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0.3),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"check_attack"
-}]
-}
 
 [sub_resource type="Animation" id="Animation_h2kdi"]
 resource_name = "Bite_InPlace"
@@ -702,9 +632,84 @@ tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 
+[sub_resource type="Animation" id="Animation_k7o77"]
+resource_name = "Bite_Front"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("MonsterArmature/Skeleton3D:Mouth")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -7.80307e-18, 0.147259, 0.500829, 0.0333333, 1, -7.80307e-18, 0.148793, 0.503429, 0.0666667, 1, -7.80307e-18, 0.153025, 0.5106, 0.1, 1, -7.80307e-18, 0.160507, 0.523281, 0.133333, 1, -7.80307e-18, 0.171982, 0.542726, 0.166667, 1, -7.80307e-18, 0.188375, 0.570507, 0.2, 1, -7.80307e-18, 0.214907, 0.615471, 0.233333, 1, -7.80307e-18, 0.255719, 0.684635, 0.266667, 1, 2.89384e-17, 0.315351, 0.785692, 0.3, 1, 8.40504e-17, 0.370619, 0.879355, 0.333333, 1, 8.40504e-17, 0.370619, 0.879355, 0.366667, 1, 8.40504e-17, 0.257601, 0.687825, 0.4, 1, 8.40504e-17, 0.197245, 0.58554, 0.433333, 1, 8.40504e-17, 0.166825, 0.533987, 0.466667, 1, 6.56797e-17, 0.152089, 0.509015, 0.5, 1, -7.80307e-18, 0.147259, 0.500829)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("MonsterArmature/Skeleton3D:Mouth")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("MonsterArmature/Skeleton3D:Head")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 0, 0.483194, 0, 0.0333333, 1, 0, 0.486733, -0.00313376, 0.0666667, 1, 0, 0.49909, -0.0139727, 0.1, 1, 7.80755e-18, 0.532482, -0.0413628, 0.133333, 1, 1.95189e-17, 0.576148, -0.0593785, 0.166667, 1, 1.95189e-17, 0.596346, -0.00732258, 0.233333, 1, 1.95189e-17, 0.631345, 0.265006, 0.266667, 1, 2.59486e-17, 0.640272, 0.359117, 0.3, 1, 3.55932e-17, 0.643491, 0.398159, 0.333333, 1, 3.55932e-17, 0.643491, 0.398159, 0.366667, 1, 3.55932e-17, 0.570606, 0.217122, 0.4, 1, 3.55932e-17, 0.52506, 0.10399, 0.433333, 1, 3.55932e-17, 0.499357, 0.0401476, 0.466667, 1, 2.84746e-17, 0.487141, 0.00980501, 0.5, 1, 0, 0.483194, 0)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("MonsterArmature/Skeleton3D:Head")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.0333333, 1, -0.00847464, 0, 0, 0.999964, 0.0666667, 1, -0.0378944, 0, 0, 0.999282, 0.1, 1, -0.112167, -1.69163e-25, 1.74189e-17, 0.993689, 0.133333, 1, -0.189187, -5.05132e-25, 4.34593e-17, 0.981941, 0.166667, 1, -0.163552, -8.38471e-25, 4.35717e-17, 0.986535, 0.233333, 1, -0.0269367, -4.63765e-25, 4.36748e-17, 0.999637, 0.266667, 1, 0.020418, 7.00664e-26, 2.25979e-17, 0.999792, 0.3, 1, 0.0399414, 8.14906e-25, -8.86876e-18, 0.999202, 0.333333, 1, 0.0399414, 8.14906e-25, -8.86876e-18, 0.999202, 0.366667, 1, 0.0217844, 8.24858e-25, -8.87052e-18, 0.999763, 0.4, 1, 0.0104337, 8.27251e-25, -8.87013e-18, 0.999946, 0.433333, 1, 0.00402779, 8.26707e-25, -8.86941e-18, 0.999992, 0.466667, 1, 0.000983614, 6.60776e-25, -7.09518e-18, 1, 0.5, 1, 0, 0, 0, 1)
+tracks/4/type = "rotation_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("MonsterArmature/Skeleton3D:Head3")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0, 3.54715e-10, -0.00264005, 0.999997, 0.0333333, 1, 0, 3.55441e-10, -0.00368595, 0.999993, 0.166667, 1, -7.45059e-09, 3.81082e-10, -0.00179455, 0.999998, 0.2, 1, -1.49012e-09, 3.57801e-10, -0.00247095, 0.999997, 0.233333, 1, 0.00506175, 1.03734e-05, -0.0034763, 0.999981, 0.266667, 1, 0.0233483, 4.78482e-05, -0.00419572, 0.999719, 0.3, 1, 0.0629298, 0.000128962, -0.0039579, 0.99801, 0.333333, 1, 0.131587, 0.000269662, -0.00203148, 0.991302, 0.366667, 1, 0.0845782, 0.000173327, -0.000752663, 0.996417, 0.4, 1, 0.0438286, 8.98184e-05, -0.000285849, 0.999039, 0.433333, 1, 0.0167006, 3.4225e-05, -0.000568525, 0.99986, 0.466667, 1, 0.00400292, 8.20355e-06, -0.00143954, 0.999991, 0.5, 1, 0, 3.54715e-10, -0.00264005, 0.999997)
+tracks/5/type = "position_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("MonsterArmature/Skeleton3D:Body")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0)
+tracks/6/type = "rotation_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("MonsterArmature/Skeleton3D:Body")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("MonsterArmature/Skeleton3D:Head2")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/8/type = "method"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../FSM/EnemyAttackState")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"check_attack"
+}]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fsrk7"]
 _data = {
-"Bite_Front": SubResource("Animation_k7o77"),
+"Attack": SubResource("Animation_k7o77"),
 "Bite_InPlace": SubResource("Animation_h2kdi"),
 "Dance": SubResource("Animation_k7uie"),
 "Death": SubResource("Animation_bnp4u"),
@@ -779,7 +784,7 @@ bones/4/parent = 3
 bones/4/rest = Transform3D(0.999986, 0.00528009, 7.09427e-10, -0.00528009, 0.999986, -1.87293e-12, -7.09427e-10, -1.87293e-12, 1, 0, 0.390075, 0)
 bones/4/enabled = true
 bones/4/position = Vector3(0, 0.390075, 0)
-bones/4/rotation = Quaternion(0, 3.54715e-10, -0.00264005, 0.999997)
+bones/4/rotation = Quaternion(-1.01137e-19, 3.54715e-10, -0.00264005, 0.999997)
 bones/4/scale = Vector3(1, 1, 1)
 
 [node name="Skull2" type="MeshInstance3D" parent="Visuals/Skull/MonsterArmature/Skeleton3D"]
@@ -793,9 +798,124 @@ libraries = {
 }
 autoplay = "Idle"
 
-[node name="FSM" type="Node3D" parent="." node_paths=PackedStringArray("initial_state")]
-script = ExtResource("1_dux51")
-initial_state = NodePath("EnemyIdleState")
+[node name="StateChart" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("13_uwi7r")
+
+[node name="Root" type="Node" parent="StateChart"]
+script = ExtResource("14_eh0gb")
+
+[node name="Movement" type="Node" parent="StateChart/Root"]
+script = ExtResource("15_a1u4e")
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="StateChart/Root/Movement"]
+script = ExtResource("16_24xkw")
+
+[node name="ToPatrol" type="Node" parent="StateChart/Root/Movement/Idle"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Patrol")
+event = &"timeout"
+delay_in_seconds = "0.0"
+
+[node name="ToChase" type="Node" parent="StateChart/Root/Movement/Idle"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Chase")
+event = &"chase"
+delay_in_seconds = "0.0"
+
+[node name="Attack" type="Node" parent="StateChart/Root/Movement"]
+script = ExtResource("16_24xkw")
+
+[node name="ToChase" type="Node" parent="StateChart/Root/Movement/Attack"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Chase")
+event = &"chase"
+delay_in_seconds = "0.0"
+
+[node name="Patrol" type="Node" parent="StateChart/Root/Movement"]
+script = ExtResource("16_24xkw")
+
+[node name="ToIdle" type="Node" parent="StateChart/Root/Movement/Patrol"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Idle")
+event = &"destiny_reached"
+delay_in_seconds = "0.0"
+
+[node name="ToChase" type="Node" parent="StateChart/Root/Movement/Patrol"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Chase")
+event = &"chase"
+delay_in_seconds = "0.0"
+
+[node name="Return" type="Node" parent="StateChart/Root/Movement"]
+script = ExtResource("16_24xkw")
+
+[node name="ToIdle" type="Node" parent="StateChart/Root/Movement/Return"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Idle")
+event = &"destiny_reached"
+delay_in_seconds = "0.0"
+
+[node name="Chase" type="Node" parent="StateChart/Root/Movement"]
+script = ExtResource("16_24xkw")
+
+[node name="ToReturn" type="Node" parent="StateChart/Root/Movement/Chase"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Return")
+event = &"chase_timeout"
+delay_in_seconds = "0"
+
+[node name="ToAttack" type="Node" parent="StateChart/Root/Movement/Chase"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Attack")
+event = &"attack"
+delay_in_seconds = "0.0"
+
+[node name="Animation" type="Node" parent="StateChart/Root"]
+script = ExtResource("15_a1u4e")
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="StateChart/Root/Animation"]
+script = ExtResource("7_2q8mr")
+animation_player = NodePath("../../../../Visuals/AnimationPlayer")
+animation_name = &"Idle"
+
+[node name="ToMove" type="Node" parent="StateChart/Root/Animation/Idle"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Move")
+event = &"movement"
+delay_in_seconds = "0.0"
+
+[node name="Move" type="Node" parent="StateChart/Root/Animation"]
+script = ExtResource("7_2q8mr")
+animation_player = NodePath("../../../../Visuals/AnimationPlayer")
+animation_name = &"Walk"
+
+[node name="ToIdle" type="Node" parent="StateChart/Root/Animation/Move"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Idle")
+event = &"destiny_reached"
+delay_in_seconds = "0.0"
+
+[node name="ToAttack" type="Node" parent="StateChart/Root/Animation/Move"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Attack")
+event = &"attack"
+delay_in_seconds = "0.0"
+
+[node name="Attack" type="Node" parent="StateChart/Root/Animation"]
+script = ExtResource("7_2q8mr")
+animation_player = NodePath("../../../../Visuals/AnimationPlayer")
+animation_name = &"Attack"
+
+[node name="ToMove" type="Node" parent="StateChart/Root/Animation/Attack"]
+script = ExtResource("7_aphr8")
+to = NodePath("../../Move")
+event = &"movement"
+delay_in_seconds = "0.0"
+
+[node name="FSM" type="Node3D" parent="."]
 
 [node name="EnemyBaseState" type="Node3D" parent="FSM"]
 script = ExtResource("2_d1u31")
@@ -803,7 +923,7 @@ script = ExtResource("2_d1u31")
 [node name="EnemyIdleState" type="Node3D" parent="FSM"]
 script = ExtResource("1_15s3t")
 
-[node name="EnemyMoveState" type="Node3D" parent="FSM"]
+[node name="EnemyPatrolState" type="Node3D" parent="FSM"]
 script = ExtResource("4_xmicf")
 
 [node name="EnemyChaseState" type="Node3D" parent="FSM"]
@@ -816,6 +936,7 @@ script = ExtResource("8_5dcun")
 script = ExtResource("9_likt3")
 
 [node name="IdleStateTimer" type="Timer" parent="FSM"]
+unique_name_in_owner = true
 wait_time = 2.0
 
 [node name="ChaseStateTimer" type="Timer" parent="FSM"]
@@ -837,11 +958,11 @@ script = ExtResource("7_0idqc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.109255, 0.627734, 0)
 shape = SubResource("SphereShape3D_ohbws")
 
-[node name="Area3D" type="Area3D" parent="Combat"]
+[node name="ChasePlayerArea" type="Area3D" parent="Combat"]
 collision_layer = 0
 collision_mask = 4
 
-[node name="DetectPlayerArea" type="CollisionShape3D" parent="Combat/Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Combat/ChasePlayerArea"]
 shape = SubResource("SphereShape3D_h64fe")
 
 [node name="CanAttackArea" type="Area3D" parent="Combat"]
@@ -867,10 +988,22 @@ billboard = 1
 modulate = Color(1, 0, 0, 1)
 text = "SKULL OF AVALON"
 
+[connection signal="state_entered" from="StateChart/Root/Movement/Idle" to="FSM/EnemyIdleState" method="_on_idle_state_entered"]
+[connection signal="state_exited" from="StateChart/Root/Movement/Idle" to="FSM/EnemyIdleState" method="_on_idle_state_exited"]
+[connection signal="state_processing" from="StateChart/Root/Movement/Idle" to="FSM/EnemyIdleState" method="_on_idle_state_processing"]
+[connection signal="state_entered" from="StateChart/Root/Movement/Attack" to="FSM/EnemyAttackState" method="_on_attack_state_entered"]
+[connection signal="state_exited" from="StateChart/Root/Movement/Attack" to="FSM/EnemyAttackState" method="_on_attack_state_exited"]
+[connection signal="state_processing" from="StateChart/Root/Movement/Attack" to="FSM/EnemyAttackState" method="_on_attack_state_processing"]
+[connection signal="state_entered" from="StateChart/Root/Movement/Patrol" to="FSM/EnemyPatrolState" method="_on_patrol_state_entered"]
+[connection signal="state_exited" from="StateChart/Root/Movement/Patrol" to="FSM/EnemyPatrolState" method="_on_patrol_state_exited"]
+[connection signal="state_processing" from="StateChart/Root/Movement/Patrol" to="FSM/EnemyPatrolState" method="_on_patrol_state_processing"]
+[connection signal="state_entered" from="StateChart/Root/Movement/Return" to="FSM/EnemyReturnState" method="_on_return_state_entered"]
+[connection signal="state_exited" from="StateChart/Root/Movement/Return" to="FSM/EnemyReturnState" method="_on_return_state_exited"]
+[connection signal="state_processing" from="StateChart/Root/Movement/Return" to="FSM/EnemyReturnState" method="_on_return_state_processing"]
+[connection signal="state_entered" from="StateChart/Root/Movement/Chase" to="FSM/EnemyChaseState" method="_on_chase_state_entered"]
+[connection signal="state_exited" from="StateChart/Root/Movement/Chase" to="FSM/EnemyChaseState" method="_on_chase_state_exited"]
+[connection signal="state_processing" from="StateChart/Root/Movement/Chase" to="FSM/EnemyChaseState" method="_on_chase_state_processing"]
 [connection signal="timeout" from="FSM/IdleStateTimer" to="FSM/EnemyIdleState" method="_on_idle_state_timer_timeout"]
 [connection signal="timeout" from="FSM/ChaseStateTimer" to="FSM/EnemyChaseState" method="_on_chase_state_timer_timeout"]
-[connection signal="body_entered" from="Combat/Area3D" to="FSM/EnemyBaseState" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Combat/Area3D" to="FSM/EnemyIdleState" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Combat/Area3D" to="FSM/EnemyMoveState" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Combat/Area3D" to="FSM/EnemyChaseState" method="_on_area_3d_body_entered"]
-[connection signal="body_entered" from="Combat/Area3D" to="FSM/EnemyAttackState" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Combat/ChasePlayerArea" to="FSM/EnemyBaseState" method="_on_chase_player_area_body_entered"]
+[connection signal="body_exited" from="Combat/ChasePlayerArea" to="FSM/EnemyBaseState" method="_on_chase_player_area_body_exited"]
