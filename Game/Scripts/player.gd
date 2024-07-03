@@ -21,7 +21,7 @@ var direction
 var health = 100
 
 func _ready():
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED #remove mouse from screen
+	pass #Input.mouse_mode = Input.MOUSE_MODE_CAPTURED #remove mouse from screen
 	
 func _input(event):
 	if event is InputEventMouseMotion:
