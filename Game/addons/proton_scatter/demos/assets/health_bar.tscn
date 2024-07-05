@@ -6,6 +6,11 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8sdf"]
 bg_color = Color(0, 0.690954, 0.655173, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.987664, 0.991776, 0.996384, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iklqr"]
 bg_color = Color(0.0139092, 0.130215, 0.101948, 1)
@@ -21,11 +26,20 @@ bg_color = Color(1, 1, 1, 1)
 
 [node name="HealthBar" type="ProgressBar"]
 z_index = 1
-offset_right = 573.0
-offset_bottom = 78.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -286.5
+offset_top = -39.0
+offset_right = 286.5
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/background = SubResource("StyleBoxEmpty_j5hfi")
 theme_override_styles/fill = SubResource("StyleBoxFlat_t8sdf")
-value = 60.0
+value = 75.0
 show_percentage = false
 script = ExtResource("1_bbqn1")
 
@@ -40,7 +54,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_iklqr")
 theme_override_styles/fill = SubResource("StyleBoxFlat_vc8ii")
-value = 80.0
+value = 50.0
 show_percentage = false
 
 [node name="DamageBarTimer" type="Timer" parent="."]

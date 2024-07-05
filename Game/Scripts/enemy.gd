@@ -6,13 +6,14 @@ class_name Enemy
 
 @export var stats: EntityStats
 
-var radius = 5.0
-var health : float
+var radius:float = 5
+var health:float
 
 func _ready():
 	health = stats.health
 	health_bar.init_health(stats.health)
-	print(health_bar.health)
 
 func _on_teste_timeout():
-	health_bar.health = 20
+	health -= 20
+	if health_bar != null:
+		health_bar.health = health
